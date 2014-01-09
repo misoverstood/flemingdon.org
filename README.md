@@ -1,2 +1,2 @@
-flemingdon-org.github.com
+flemingdon.org
 ==================
