@@ -12,6 +12,9 @@ Expansion sources by type:
   quote     Wikipedia REST summary of the speaker
   passage   Open Library  work metadata and description
 
+genius_id is optional: with it blank the build searches Genius using the
+attribution and source fields and logs which song it settled on.
+
 Env:
   AIRTABLE_TOKEN  personal access token, data.records:read  (required)
   GENIUS_TOKEN    Genius client access token                (lyrics)
@@ -41,6 +44,11 @@ OPENLIB_API = "https://openlibrary.org"
 
 USER_AGENT = "flemingdon.org/1.0 (https://flemingdon.org)"
 TIMEOUT = 30
+
+# Genius hosts community translation and clean-edit pages that match searches
+# but carry no useful annotations.
+GENIUS_NOISE = ("translation", "traduc", "çeviri", "перевод", "übersetzung",
+                "(clean", "romanization", "annotated")
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
@@ -190,7 +198,6 @@ def strip_markdown(text):
     if not text:
         return ""
 
-    # Cut everything from the first separator or cross-reference block.
     for marker in ("----", "Also contained in:", "Contained in:",
                    "Source title:", "Includes:"):
         i = text.find(marker)
@@ -203,16 +210,62 @@ def strip_markdown(text):
     return text.strip()
 
 
+def find_genius_song(entry, auth):
+    """Resolve a song id from attribution + source when genius_id is blank.
+
+    Returns the id as a string, or None. Every decision is logged so a wrong
+    match is visible in the daily run rather than silently published.
+    """
+    terms = " ".join(p for p in (entry["attribution"], entry["source"]) if p).strip()
+    if not terms:
+        log("  no genius_id, and no attribution/source to search on")
+        return None
+
+    data = get_json(
+        "{}/search?q={}".format(GENIUS_API, urllib.parse.quote(terms)), auth
+    )
+    if not data:
+        return None
+
+    hits = data.get("response", {}).get("hits", [])
+    artist = flatten(entry["attribution"])
+    title = flatten(entry["source"])
+
+    best = None
+    for hit in hits:
+        r = hit.get("result", {}) or {}
+        full = r.get("full_title") or r.get("title") or ""
+        if any(n in full.lower() for n in GENIUS_NOISE):
+            continue
+
+        score = 0
+        if title and title in flatten(r.get("title")):
+            score += 2
+        if artist and artist in flatten((r.get("primary_artist") or {}).get("name")):
+            score += 2
+        # Genius orders by relevance, so keep that as the tiebreaker.
+        if best is None or score > best[0]:
+            best = (score, r)
+
+    if not best or best[0] == 0:
+        log("  genius search for '{}' found nothing convincing".format(terms))
+        return None
+
+    r = best[1]
+    log("  no genius_id, matched by search: {} (id {})".format(
+        r.get("full_title"), r.get("id")))
+    return str(r.get("id"))
+
+
 def enrich_lyric(entry, token):
     if not token:
         log("  GENIUS_TOKEN not set, skipping lyric enrichment")
         return None
-    if not entry["genius_id"]:
-        log("  no genius_id on this entry")
-        return None
 
     auth = {"Authorization": "Bearer " + token}
-    song_id = entry["genius_id"]
+    song_id = entry["genius_id"] or find_genius_song(entry, auth)
+    if not song_id:
+        return None
 
     song = get_json("{}/songs/{}?text_format=plain".format(GENIUS_API, song_id), auth)
     meta = {}
@@ -458,4 +511,5 @@ def main():
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    return_code = main()
+    sys.exit(return_code)
