@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>flemingdon.org</title>
+<meta name="description" content="A line a day. Lyrics, dialogue, quotes and passages, with the context behind them.">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="flemingdon.org">
+<meta property="og:title" content="flemingdon.org">
+<meta property="og:description" content="A line a day. Lyrics, dialogue, quotes and passages, with the context behind them.">
+<meta property="og:url" content="https://flemingdon.org/">
+<meta name="twitter:card" content="summary">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..600,0..100,0..1&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    color-scheme: light dark;
+
+    --ink:        #17140f;
+    --ink-soft:   #4a453c;
+    --ink-faint:  #8b8478;
+    --rule:       #e2dccd;
+    --paper:      #fffdf7;
+    --accent:     #46654e;
+
+    --serif: "Fraunces", "Iowan Old Style", Palatino, Georgia, serif;
+    --sans:  "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    box-sizing: border-box;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink:       #f0ebe0;
+      --ink-soft:  #b8b1a3;
+      --ink-faint: #7f786c;
+      --rule:      #33302a;
+      --paper:     #14120e;
+      --accent:    #9dbfa3;
+    }
+  }
+
+  *, *::before, *::after { box-sizing: inherit; }
+
+  html { height: 100%; }
+
+  body {
+    min-height: 100%;
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--serif);
+    line-height: 1.55;
+    -webkit-text-size-adjust: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: calc(2rem + env(safe-area-inset-top, 0px)) 1.5rem
+             calc(2rem + env(safe-area-inset-bottom, 0px));
+  }
+
+  .wrap {
+    width: 100%;
+    max-width: 46rem;
+    margin: 0 auto;
+  }
+
+  /* ---------------------------------------------------------- entry */
+
+  .entry { margin-bottom: 3rem; }
+
+  .headword {
+    margin: 0;
+    font-size: clamp(1.7rem, 4.4vw, 3.05rem);
+    font-weight: 400;
+    line-height: 1.24;
+    letter-spacing: -0.012em;
+    font-variation-settings: "opsz" 144, "SOFT" 45, "WONK" 1;
+    white-space: pre-wrap;
+    text-wrap: pretty;
+  }
+
+  .grammar {
+    margin: 1.2rem 0 0;
+    font-family: var(--sans);
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+
+  .grammar .kind {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 400;
+    text-transform: lowercase;
+    letter-spacing: 0;
+    font-size: 1rem;
+    font-variation-settings: "opsz" 24, "SOFT" 60, "WONK" 1;
+    color: var(--ink-soft);
+    margin-right: 0.55rem;
+  }
+
+  .senses {
+    margin: 2.1rem 0 0;
+    padding: 0 0 0 1.5rem;
+    border-left: 2px solid var(--rule);
+    max-width: 36rem;
+  }
+
+  .senses p {
+    margin: 0 0 1.05rem;
+    font-size: 1.05rem;
+    line-height: 1.62;
+    color: var(--ink-soft);
+    font-variation-settings: "opsz" 14, "SOFT" 30, "WONK" 0;
+    text-wrap: pretty;
+  }
+
+  .senses p:last-child { margin-bottom: 0; }
+
+  .facts {
+    margin: 1.9rem 0 0;
+    padding: 0;
+    list-style: none;
+    font-family: var(--sans);
+    font-size: 0.82rem;
+    line-height: 1.85;
+    color: var(--ink-faint);
+  }
+
+  .facts .label {
+    display: inline-block;
+    min-width: 5.5rem;
+    letter-spacing: 0.02em;
+    color: var(--ink-faint);
+  }
+
+  .facts .value { color: var(--ink-soft); }
+
+  .bare {
+    margin: 2.1rem 0 0;
+    font-family: var(--sans);
+    font-size: 0.84rem;
+    color: var(--ink-faint);
+    font-style: italic;
+  }
+
+  /* ---------------------------------------------------------- footer */
+
+  footer {
+    margin-top: 3.25rem;
+    padding-top: 1.35rem;
+    border-top: 1px solid var(--rule);
+    font-family: var(--sans);
+    font-size: 0.76rem;
+    line-height: 1.9;
+    color: var(--ink-faint);
+    max-width: 36rem;
+  }
+
+  footer p { margin: 0 0 0.45rem; }
+  footer p:last-child { margin-bottom: 0; }
+
+  footer a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    border-bottom: 1px solid var(--rule);
+    transition: color 0.15s ease, border-color 0.15s ease;
+  }
+
+  footer a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+  .sep { margin: 0 0.45rem; opacity: 0.5; }
+
+  .credits { margin-top: 0.9rem; opacity: 0.75; }
+
+  @media (max-width: 24rem) {
+    body { padding-left: 1.15rem; padding-right: 1.15rem; }
+    .facts .label { display: block; min-width: 0; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <main class="entry" id="entry">
+    <p class="bare" id="loading">Loading…</p>
+  </main>
+
+  <footer>
+    <p id="dateline"></p>
+    <p id="sourceline"></p>
+    <p>
+      <a href="https://muhummud.org">muhummud.org</a>
+      <span class="sep">·</span>
+      <a href="https://thatstheworst.com">thatstheworst.com</a>
+      <span class="sep">·</span>
+      <a href="https://iseentit.com">iseentit.com</a>
+    </p>
+    <p class="credits">
+      Weather from <a href="https://open-meteo.com">Open-Meteo</a>.<span id="tmdb-notice"></span>
+    </p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var TORONTO = { lat: 43.6532, lon: -79.3832, tz: "America/Toronto" };
+
+  var KIND_LABEL = {
+    lyric:    "lyric",
+    dialogue: "dialogue",
+    quote:    "quote",
+    passage:  "passage"
+  };
+
+  function el(tag, cls, text) {
+    var node = document.createElement(tag);
+    if (cls) node.className = cls;
+    if (text !== undefined && text !== null) node.textContent = text;
+    return node;
+  }
+
+  function join(parts, sep) {
+    return parts.filter(function (p) { return p; }).join(sep || ", ");
+  }
+
+  /* ---------------------------------------------------------- entry */
+
+  function metaRows(item) {
+    var x = item.expansion;
+    var meta = (x && x.meta) || {};
+    var rows = [];
+
+    if (item.type === "lyric") {
+      rows.push(["Song", item.source || meta.title]);
+      rows.push(["Album", item.source && meta.album && meta.album !== item.source ? meta.album : null]);
+      rows.push(["Released", meta.released || item.year]);
+      rows.push(["Produced", join(meta.producers)]);
+      rows.push(["Written", join(meta.writers)]);
+    } else if (item.type === "dialogue") {
+      rows.push([meta.title ? "Title" : null, meta.title || item.source]);
+      rows.push(["Released", meta.released || item.year]);
+      rows.push([meta.lead_label || "Directed by", join(meta.leads)]);
+      rows.push(["Genre", join(meta.genres)]);
+    } else if (item.type === "quote") {
+      rows.push(["Source", item.source]);
+      rows.push(["Year", item.year]);
+      rows.push(["Known for", meta.subtitle]);
+    } else if (item.type === "passage") {
+      rows.push(["Book", meta.title || item.source]);
+      rows.push(["Author", join(meta.authors) || item.attribution]);
+      rows.push(["Published", meta.published || item.year]);
+      rows.push(["Subjects", join(meta.subjects)]);
+    } else {
+      rows.push(["Source", item.source]);
+      rows.push(["Year", item.year]);
+    }
+
+    return rows.filter(function (r) { return r[0] && r[1]; });
+  }
+
+  function render(item) {
+    var main = document.getElementById("entry");
+    main.textContent = "";
+
+    main.appendChild(el("h1", "headword", item.text));
+
+    var grammar = el("p", "grammar");
+    var kind = KIND_LABEL[item.type];
+    if (kind) grammar.appendChild(el("span", "kind", kind + "."));
+    if (item.attribution) {
+      grammar.appendChild(document.createTextNode(item.attribution));
+    }
+    if (grammar.childNodes.length) main.appendChild(grammar);
+
+    var body = (item.expansion && item.expansion.body) || [];
+    var note = item.note ? [item.note] : [];
+    var senses = body.length ? body : note;
+
+    if (senses.length) {
+      var block = el("div", "senses");
+      senses.forEach(function (para) { block.appendChild(el("p", null, para)); });
+      main.appendChild(block);
+    }
+
+    var rows = metaRows(item);
+    if (rows.length) {
+      var list = el("ul", "facts");
+      rows.forEach(function (row) {
+        var li = el("li");
+        li.appendChild(el("span", "label", row[0]));
+        li.appendChild(el("span", "value", String(row[1])));
+        list.appendChild(li);
+      });
+      main.appendChild(list);
+    }
+
+    if (!senses.length && !rows.length) {
+      main.appendChild(el("p", "bare", "No further context on this one."));
+    }
+
+    if (item.expansion && item.expansion.source_url) {
+      var line = document.getElementById("sourceline");
+      line.textContent = "Context from ";
+      var a = el("a", null, item.expansion.source_name || "source");
+      a.href = item.expansion.source_url;
+      a.rel = "noopener";
+      line.appendChild(a);
+    }
+
+    // TMDB's terms require this wording whenever their data is shown.
+    if (item.type === "dialogue" && item.expansion) {
+      document.getElementById("tmdb-notice").textContent =
+        " This product uses the TMDB API but is not endorsed or certified by TMDB.";
+    }
+  }
+
+  function failed() {
+    var main = document.getElementById("entry");
+    main.textContent = "";
+    main.appendChild(el("p", "bare", "Today's entry could not be loaded."));
+  }
+
+  /* --------------------------------------------------------- footer */
+
+  function dateline() {
+    var now = new Date();
+    return now.toLocaleDateString("en-CA", {
+      timeZone: TORONTO.tz,
+      weekday: "long",
+      year: "numeric",
+      month: "long",
+      day: "numeric"
+    });
+  }
+
+  function paintFooterLine(temp) {
+    var node = document.getElementById("dateline");
+    node.textContent = dateline();
+    if (temp === undefined || temp === null) return;
+
+    node.appendChild(el("span", "sep", "\u00B7"));
+    node.appendChild(
+      document.createTextNode("Toronto, " + Math.round(temp) + "\u00B0C")
+    );
+  }
+
+  function weather() {
+    var url = "https://api.open-meteo.com/v1/forecast"
+      + "?latitude=" + TORONTO.lat
+      + "&longitude=" + TORONTO.lon
+      + "&current=temperature_2m"
+      + "&timezone=" + encodeURIComponent(TORONTO.tz);
+
+    fetch(url)
+      .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
+      .then(function (data) {
+        var t = data && data.current && data.current.temperature_2m;
+        paintFooterLine(t);
+      })
+      .catch(function () { /* date alone, already painted */ });
+  }
+
+  /* ----------------------------------------------------------- boot */
+
+  paintFooterLine(null);
+  weather();
+
+  fetch("item.json?v=" + Date.now())
+    .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
+    .then(render)
+    .catch(failed);
+})();
+</script>
+</body>
+</html>
