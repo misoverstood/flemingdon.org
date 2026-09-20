@@ -136,6 +136,9 @@
 
   .senses p:last-child { margin-bottom: 0; }
 
+  /* your own gloss, set a shade darker than sourced text */
+  .senses p.own { color: var(--ink); }
+
   .facts {
     margin: 1.9rem 0 0;
     padding: 0;
@@ -301,13 +304,13 @@
     }
     if (grammar.childNodes.length) main.appendChild(grammar);
 
+    // Sourced context first, then your own note as its own paragraph.
     var body = (item.expansion && item.expansion.body) || [];
-    var note = item.note ? [item.note] : [];
-    var senses = body.length ? body : note;
 
-    if (senses.length) {
+    if (body.length || item.note) {
       var block = el("div", "senses");
-      senses.forEach(function (para) { block.appendChild(el("p", null, para)); });
+      body.forEach(function (para) { block.appendChild(el("p", null, para)); });
+      if (item.note) block.appendChild(el("p", "own", item.note));
       main.appendChild(block);
     }
 
@@ -321,10 +324,6 @@
         list.appendChild(li);
       });
       main.appendChild(list);
-    }
-
-    if (!senses.length && !rows.length) {
-      main.appendChild(el("p", "bare", "No further context on this one."));
     }
 
     if (item.expansion && item.expansion.source_url) {
