@@ -14,6 +14,34 @@
     "skip": false
   },
   {
+    "id": "recMmzx0sYK2L3I0V",
+    "text": "I never had any friends later on like the ones I had when I was twelve. Jesus, does anyone?",
+    "type": "dialogue",
+    "attribution": "Gordie Lachance",
+    "source": "Stand By Me",
+    "year": 1986,
+    "genius_id": "",
+    "tmdb_id": "235",
+    "wiki_title": "",
+    "openlibrary_id": "",
+    "note": "",
+    "skip": false
+  },
+  {
+    "id": "recPLBj32YttA9KyR",
+    "text": "I'm gonna make him an offer he can't refuse",
+    "type": "dialogue",
+    "attribution": "Vito Corleone",
+    "source": "The Godfather",
+    "year": 1972,
+    "genius_id": "",
+    "tmdb_id": "238",
+    "wiki_title": "",
+    "openlibrary_id": "",
+    "note": "",
+    "skip": false
+  },
+  {
     "id": "recT2pUTnUiKPDQFq",
     "text": "The fish,\nEven in the fisherman's net,\nStill carries,\nThe smell of the sea",
     "type": "quote",
@@ -38,6 +66,20 @@
     "tmdb_id": "",
     "wiki_title": "",
     "openlibrary_id": "",
+    "note": "",
+    "skip": false
+  },
+  {
+    "id": "recoyGriYffZdwR8O",
+    "text": "It was a bright cold day in April, and the clocks were striking thirteen.",
+    "type": "passage",
+    "attribution": "George Orwell",
+    "source": "1984",
+    "year": 1949,
+    "genius_id": "",
+    "tmdb_id": "",
+    "wiki_title": "",
+    "openlibrary_id": "OL1168083W",
     "note": "",
     "skip": false
   }

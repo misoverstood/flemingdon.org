@@ -178,11 +178,29 @@ def flatten(text):
 
 
 def paragraphs(text):
-    """Split an annotation body into clean paragraphs."""
+    """Split a body into clean paragraphs."""
     if not text:
         return []
     parts = re.split(r"\n\s*\n|\n", text)
     return [p.strip() for p in parts if p.strip()]
+
+
+def strip_markdown(text):
+    """Open Library descriptions carry markdown links and editorial trailers."""
+    if not text:
+        return ""
+
+    # Cut everything from the first separator or cross-reference block.
+    for marker in ("----", "Also contained in:", "Contained in:",
+                   "Source title:", "Includes:"):
+        i = text.find(marker)
+        if i != -1:
+            text = text[:i]
+
+    text = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", text)   # [label](url) -> label
+    text = re.sub(r"https?://\S+", "", text)               # bare urls
+    text = re.sub(r"[*_`]{1,3}", "", text)                 # emphasis marks
+    return text.strip()
 
 
 def enrich_lyric(entry, token):
@@ -227,7 +245,6 @@ def enrich_lyric(entry, token):
             if not frag or not ref.get("annotations"):
                 continue
             if target and (target in frag or frag in target):
-                # prefer the closest-length match
                 score = abs(len(frag) - len(target))
                 if best is None or score < best[0]:
                     best = (score, ref)
@@ -312,7 +329,7 @@ def enrich_quote(entry):
 
     title = urllib.parse.quote(entry["wiki_title"].replace(" ", "_"), safe="")
     data = get_json("{}/{}".format(WIKI_API, title))
-    if not data or data.get("type") == "https://mediawiki.org/wiki/HyperSwitch/errors/not_found":
+    if not data or data.get("type", "").endswith("not_found"):
         return None
 
     meta = {
@@ -370,7 +387,7 @@ def enrich_passage(entry):
         "source_name": "Open Library",
         "source_url": url,
         "meta": meta,
-        "body": paragraphs(description),
+        "body": paragraphs(strip_markdown(description))[:2],
     }
 
 
