@@ -3,16 +3,27 @@
 flemingdon.org daily build.
 
 Reads entries from Airtable, picks one at random without repeating until the
-list is exhausted, then writes item.json for the static front end.
+list is exhausted, enriches it from the API matching its type, then writes
+item.json for the static front end.
+
+Expansion sources by type:
+  lyric     Genius   annotation on the matching lyric fragment, plus song meta
+  dialogue  TMDB     film or show title, year, director/creator, overview
+  quote     Wikipedia REST summary of the speaker
+  passage   Open Library  work metadata and description
 
 Env:
-  AIRTABLE_TOKEN  personal access token, data.records:read
+  AIRTABLE_TOKEN  personal access token, data.records:read  (required)
+  GENIUS_TOKEN    Genius client access token                (lyrics)
+  TMDB_TOKEN      TMDB API read access token (v4 bearer)    (dialogue)
 """
 
 import json
 import os
 import random
+import re
 import sys
+import unicodedata
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -22,6 +33,14 @@ from pathlib import Path
 AIRTABLE_BASE = "appRpN1mY1eO7TavS"
 AIRTABLE_TABLE = "tbl7soJVlsYxqAjBa"
 AIRTABLE_API = "https://api.airtable.com/v0"
+
+GENIUS_API = "https://api.genius.com"
+TMDB_API = "https://api.themoviedb.org/3"
+WIKI_API = "https://en.wikipedia.org/api/rest_v1/page/summary"
+OPENLIB_API = "https://openlibrary.org"
+
+USER_AGENT = "flemingdon.org/1.0 (https://flemingdon.org)"
+TIMEOUT = 30
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
@@ -49,8 +68,26 @@ def write_json(path, payload):
         fh.write("\n")
 
 
+def get_json(url, headers=None):
+    """GET and parse JSON. Returns None on any failure rather than raising, so
+    a dead API degrades the page instead of killing the build."""
+    req = urllib.request.Request(url)
+    req.add_header("User-Agent", USER_AGENT)
+    for key, value in (headers or {}).items():
+        req.add_header(key, value)
+
+    try:
+        with urllib.request.urlopen(req, timeout=TIMEOUT) as resp:
+            return json.load(resp)
+    except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError,
+            json.JSONDecodeError) as err:
+        log("  request failed: {} ({})".format(err, url.split("?")[0]))
+        return None
+
+
+# ---------------------------------------------------------------- Airtable
+
 def fetch_entries(token):
-    """Pull every record from the entries table, following pagination."""
     records = []
     offset = None
 
@@ -60,15 +97,12 @@ def fetch_entries(token):
             params["offset"] = offset
 
         url = "{}/{}/{}?{}".format(
-            AIRTABLE_API,
-            AIRTABLE_BASE,
-            AIRTABLE_TABLE,
+            AIRTABLE_API, AIRTABLE_BASE, AIRTABLE_TABLE,
             urllib.parse.urlencode(params),
         )
-        req = urllib.request.Request(url, headers={"Authorization": "Bearer " + token})
-
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            payload = json.load(resp)
+        payload = get_json(url, {"Authorization": "Bearer " + token})
+        if payload is None:
+            raise RuntimeError("Airtable request failed")
 
         records.extend(payload.get("records", []))
         offset = payload.get("offset")
@@ -87,14 +121,16 @@ def normalise(record):
         "attribution": (f.get("attribution") or "").strip(),
         "source": (f.get("source") or "").strip(),
         "year": f.get("year"),
-        "genius_id": (f.get("genius_id") or "").strip(),
-        "tmdb_id": (f.get("tmdb_id") or "").strip(),
+        "genius_id": str(f.get("genius_id") or "").strip(),
+        "tmdb_id": str(f.get("tmdb_id") or "").strip(),
         "wiki_title": (f.get("wiki_title") or "").strip(),
         "openlibrary_id": (f.get("openlibrary_id") or "").strip(),
         "note": (f.get("note") or "").strip(),
         "skip": bool(f.get("skip")),
     }
 
+
+# ----------------------------------------------------------------- picking
 
 def eligible(entries):
     live, blank, skipped = [], 0, 0
@@ -110,8 +146,6 @@ def eligible(entries):
 
 
 def pick(live, used):
-    """Random with no repeats. When the pool empties, reset but never repeat
-    yesterday's entry two days running."""
     ids = {e["id"] for e in live}
     used = [rid for rid in used if rid in ids]
     last = used[-1] if used else None
@@ -127,17 +161,248 @@ def pick(live, used):
     return choice, used
 
 
+# -------------------------------------------------------------- enrichment
+
+def flatten(text):
+    """Lowercase, strip accents, normalise smart punctuation and whitespace.
+    Genius uses curly apostrophes, Airtable rows use straight ones."""
+    if not text:
+        return ""
+    text = unicodedata.normalize("NFKD", text)
+    text = "".join(c for c in text if not unicodedata.combining(c))
+    text = text.replace("\u2019", "'").replace("\u2018", "'")
+    text = text.replace("\u201c", '"').replace("\u201d", '"')
+    text = text.replace("\u2014", " ").replace("\u2013", " ")
+    text = re.sub(r"[^a-z0-9 ]+", " ", text.lower())
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def paragraphs(text):
+    """Split an annotation body into clean paragraphs."""
+    if not text:
+        return []
+    parts = re.split(r"\n\s*\n|\n", text)
+    return [p.strip() for p in parts if p.strip()]
+
+
+def enrich_lyric(entry, token):
+    if not token:
+        log("  GENIUS_TOKEN not set, skipping lyric enrichment")
+        return None
+    if not entry["genius_id"]:
+        log("  no genius_id on this entry")
+        return None
+
+    auth = {"Authorization": "Bearer " + token}
+    song_id = entry["genius_id"]
+
+    song = get_json("{}/songs/{}?text_format=plain".format(GENIUS_API, song_id), auth)
+    meta = {}
+    if song:
+        s = song.get("response", {}).get("song", {}) or {}
+        album = (s.get("album") or {}).get("name")
+        producers = [a.get("name") for a in (s.get("producer_artists") or []) if a.get("name")]
+        writers = [a.get("name") for a in (s.get("writer_artists") or []) if a.get("name")]
+        meta = {
+            "title": s.get("title"),
+            "artist": (s.get("primary_artist") or {}).get("name"),
+            "album": album,
+            "released": s.get("release_date_for_display"),
+            "producers": producers[:4],
+            "writers": writers[:4],
+            "url": s.get("url"),
+        }
+
+    refs = get_json(
+        "{}/referents?song_id={}&text_format=plain&per_page=50".format(GENIUS_API, song_id),
+        auth,
+    )
+
+    body = None
+    target = flatten(entry["text"])
+    if refs:
+        best = None
+        for ref in refs.get("response", {}).get("referents", []):
+            frag = flatten(ref.get("fragment"))
+            if not frag or not ref.get("annotations"):
+                continue
+            if target and (target in frag or frag in target):
+                # prefer the closest-length match
+                score = abs(len(frag) - len(target))
+                if best is None or score < best[0]:
+                    best = (score, ref)
+        if best:
+            plain = (best[1]["annotations"][0].get("body") or {}).get("plain")
+            body = paragraphs(plain)
+            log("  matched annotation on: {}".format(best[1].get("fragment")))
+        else:
+            log("  no annotation matched this line")
+
+    if not meta and not body:
+        return None
+
+    return {
+        "source_name": "Genius",
+        "source_url": meta.get("url"),
+        "meta": meta,
+        "body": body or [],
+    }
+
+
+def enrich_dialogue(entry, token):
+    if not token:
+        log("  TMDB_TOKEN not set, skipping dialogue enrichment")
+        return None
+    if not entry["tmdb_id"]:
+        log("  no tmdb_id on this entry")
+        return None
+
+    auth = {"Authorization": "Bearer " + token}
+    raw = entry["tmdb_id"].strip()
+
+    # Accept "movie/550", "tv/1396" or a bare ID, defaulting to movie.
+    if "/" in raw:
+        kind, _, ident = raw.partition("/")
+        kind = kind.strip().lower()
+    else:
+        kind, ident = "movie", raw
+    if kind not in ("movie", "tv"):
+        kind = "movie"
+
+    data = get_json(
+        "{}/{}/{}?append_to_response=credits".format(TMDB_API, kind, ident.strip()),
+        auth,
+    )
+    if not data:
+        return None
+
+    if kind == "movie":
+        title = data.get("title")
+        released = data.get("release_date")
+        crew = (data.get("credits") or {}).get("crew") or []
+        leads = [c.get("name") for c in crew if c.get("job") == "Director"]
+        lead_label = "Directed by"
+    else:
+        title = data.get("name")
+        released = data.get("first_air_date")
+        leads = [c.get("name") for c in (data.get("created_by") or []) if c.get("name")]
+        lead_label = "Created by"
+
+    meta = {
+        "title": title,
+        "released": (released or "")[:4] or None,
+        "lead_label": lead_label,
+        "leads": leads[:3],
+        "genres": [g.get("name") for g in (data.get("genres") or [])][:3],
+        "url": "https://www.themoviedb.org/{}/{}".format(kind, ident.strip()),
+    }
+
+    return {
+        "source_name": "TMDB",
+        "source_url": meta["url"],
+        "meta": meta,
+        "body": paragraphs(data.get("overview")),
+    }
+
+
+def enrich_quote(entry):
+    if not entry["wiki_title"]:
+        log("  no wiki_title on this entry")
+        return None
+
+    title = urllib.parse.quote(entry["wiki_title"].replace(" ", "_"), safe="")
+    data = get_json("{}/{}".format(WIKI_API, title))
+    if not data or data.get("type") == "https://mediawiki.org/wiki/HyperSwitch/errors/not_found":
+        return None
+
+    meta = {
+        "title": data.get("title"),
+        "subtitle": data.get("description"),
+        "url": (data.get("content_urls") or {}).get("desktop", {}).get("page"),
+    }
+
+    return {
+        "source_name": "Wikipedia",
+        "source_url": meta["url"],
+        "meta": meta,
+        "body": paragraphs(data.get("extract")),
+    }
+
+
+def enrich_passage(entry):
+    ident = entry["openlibrary_id"]
+    if not ident:
+        log("  no openlibrary_id on this entry")
+        return None
+
+    ident = ident.strip().upper()
+    if ident.startswith("OL") and ident.endswith("W"):
+        data = get_json("{}/works/{}.json".format(OPENLIB_API, ident))
+        url = "{}/works/{}".format(OPENLIB_API, ident)
+    else:
+        data = get_json("{}/isbn/{}.json".format(OPENLIB_API, ident))
+        url = "{}/isbn/{}".format(OPENLIB_API, ident)
+    if not data:
+        return None
+
+    description = data.get("description")
+    if isinstance(description, dict):
+        description = description.get("value")
+
+    authors = []
+    for a in data.get("authors") or []:
+        key = (a.get("author") or a).get("key")
+        if not key:
+            continue
+        person = get_json("{}{}.json".format(OPENLIB_API, key))
+        if person and person.get("name"):
+            authors.append(person["name"])
+
+    meta = {
+        "title": data.get("title"),
+        "authors": authors[:3],
+        "published": data.get("first_publish_date") or data.get("publish_date"),
+        "subjects": (data.get("subjects") or [])[:4],
+        "url": url,
+    }
+
+    return {
+        "source_name": "Open Library",
+        "source_url": url,
+        "meta": meta,
+        "body": paragraphs(description),
+    }
+
+
+def enrich(entry):
+    kind = entry["type"]
+    log("enriching {} entry".format(kind or "untyped"))
+
+    if kind == "lyric":
+        return enrich_lyric(entry, os.environ.get("GENIUS_TOKEN", "").strip())
+    if kind == "dialogue":
+        return enrich_dialogue(entry, os.environ.get("TMDB_TOKEN", "").strip())
+    if kind == "quote":
+        return enrich_quote(entry)
+    if kind == "passage":
+        return enrich_passage(entry)
+
+    log("  unknown type, no enrichment")
+    return None
+
+
+# -------------------------------------------------------------------- main
+
 def main():
     token = os.environ.get("AIRTABLE_TOKEN", "").strip()
 
     entries = None
     if token:
         try:
-            raw = fetch_entries(token)
-            entries = [normalise(r) for r in raw]
+            entries = [normalise(r) for r in fetch_entries(token)]
             write_json(CACHE_FILE, entries)
             log("fetched {} records from Airtable".format(len(entries)))
-        except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError) as err:
+        except RuntimeError as err:
             log("Airtable fetch failed: {}".format(err))
     else:
         log("AIRTABLE_TOKEN not set")
@@ -155,6 +420,7 @@ def main():
         return 1
 
     choice, used = pick(live, read_json(USED_FILE, []))
+    log("picked {} ({}): {}".format(choice["id"], choice["type"], choice["text"][:60]))
 
     item = {
         "generated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -165,12 +431,12 @@ def main():
         "source": choice["source"],
         "year": choice["year"],
         "note": choice["note"],
-        "expansion": None,
+        "expansion": enrich(choice),
     }
 
     write_json(ITEM_FILE, item)
     write_json(USED_FILE, used)
-    log("picked {} ({}): {}".format(choice["id"], choice["type"], choice["text"][:60]))
+    log("wrote item.json")
     return 0
 
 
