@@ -2,8 +2,10 @@ name: Daily entry
 
 on:
   schedule:
-    # 09:05 UTC, which is 05:05 Toronto in summer and 04:05 in winter
-    - cron: "5 9 * * *"
+    # 09:37 UTC = 05:37 Toronto in summer, 04:37 in winter.
+    # Deliberately an odd minute: GitHub drops or delays scheduled runs
+    # clustered at the top of the hour.
+    - cron: "37 9 * * *"
   workflow_dispatch:
 
 permissions:
