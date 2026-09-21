@@ -191,11 +191,13 @@
 
   footer a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
-  .network { line-height: 2.1; }
+  .credits { opacity: 0.8; }
+
+  .ring { margin-top: 0.9rem; line-height: 2.1; }
+  .ring a { white-space: nowrap; }
+  .ring a[aria-current] { color: var(--ink); }
 
   .sep { margin: 0 0.45rem; opacity: 0.5; }
-
-  .credits { margin-top: 0.9rem; opacity: 0.75; }
 
   @media (max-width: 24rem) {
     body { padding-left: 1.15rem; padding-right: 1.15rem; }
@@ -212,21 +214,16 @@
 
   <footer>
     <p id="dateline"></p>
-    <p id="sourceline"></p>
-    <p class="network">
-      <a href="https://flemingdon.org">flemingdon.org</a>
+    <p class="credits"><span id="sourceline"></span>Weather from <a href="https://open-meteo.com">Open-Meteo</a>.<span id="tmdb-notice"></span></p>
+    <p class="ring"><a href="https://muhummud.org/">muhummud.org</a>
       <span class="sep">·</span>
-      <a href="https://thatstheworst.com">thatstheworst.com</a>
+      <a href="https://thatstheworst.com/">thatstheworst.com</a>
       <span class="sep">·</span>
-      <a href="https://muhummud.org">muhummud.org</a>
+      <a href="https://flemingdon.org/" aria-current="page">flemingdon.org</a>
       <span class="sep">·</span>
-      <a href="https://naseema.net">naseema.net</a>
+      <a href="https://naseema.net/">naseema.net</a>
       <span class="sep">·</span>
-      <a href="https://iseentit.com">iseentit.com</a>
-    </p>
-    <p class="credits">
-      Weather from <a href="https://open-meteo.com">Open-Meteo</a>.<span id="tmdb-notice"></span>
-    </p>
+      <a href="https://iseentit.com/">iseentit.com</a></p>
   </footer>
 
 </div>
@@ -326,6 +323,7 @@
       main.appendChild(list);
     }
 
+    // Data credits share one line: "Context from X. Weather from Open-Meteo."
     if (item.expansion && item.expansion.source_url) {
       var line = document.getElementById("sourceline");
       line.textContent = "Context from ";
@@ -333,6 +331,7 @@
       a.href = item.expansion.source_url;
       a.rel = "noopener";
       line.appendChild(a);
+      line.appendChild(document.createTextNode(". "));
     }
 
     // TMDB's terms require this wording whenever their data is shown.
