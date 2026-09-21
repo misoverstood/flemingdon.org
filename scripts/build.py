@@ -193,8 +193,38 @@ def paragraphs(text):
     return [p.strip() for p in parts if p.strip()]
 
 
+def tidy(text):
+    """Strip markdown links, bare URLs and emphasis marks from API prose.
+
+    Genius annotations and Open Library descriptions are community-edited and
+    routinely carry raw links, which would render as unclickable text.
+    """
+    if not text:
+        return ""
+    text = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", text)   # [label](url) -> label
+    text = re.sub(r"<[^>]+>", "", text)                    # stray html
+    text = re.sub(r"https?://\S+", "", text)               # bare urls
+    text = re.sub(r"\S+\.(?:com|org|net|be)/\S*", "", text)  # schemeless links
+    text = re.sub(r"[*_`]{1,3}", "", text)                 # emphasis marks
+    text = re.sub(r"[ \t]{2,}", " ", text)                 # collapsed gaps
+    text = re.sub(r"\s+([.,;:!?])", r"\1", text)           # orphaned punctuation
+    return text.strip(" \t-–—")
+
+
+def clean_paragraphs(text, limit=None):
+    """Split, tidy, and drop anything that was only a link or is too short to
+    be a sentence — Genius leaves orphaned attributions like '– Paul Simon'."""
+    out = []
+    for para in paragraphs(text):
+        para = tidy(para)
+        if len(para) < 25:
+            continue
+        out.append(para)
+    return out[:limit] if limit else out
+
+
 def strip_markdown(text):
-    """Open Library descriptions carry markdown links and editorial trailers."""
+    """Open Library descriptions also carry editorial cross-reference blocks."""
     if not text:
         return ""
 
@@ -204,10 +234,7 @@ def strip_markdown(text):
         if i != -1:
             text = text[:i]
 
-    text = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", text)   # [label](url) -> label
-    text = re.sub(r"https?://\S+", "", text)               # bare urls
-    text = re.sub(r"[*_`]{1,3}", "", text)                 # emphasis marks
-    return text.strip()
+    return text
 
 
 def find_genius_song(entry, auth):
@@ -303,7 +330,7 @@ def enrich_lyric(entry, token):
                     best = (score, ref)
         if best:
             plain = (best[1]["annotations"][0].get("body") or {}).get("plain")
-            body = paragraphs(plain)
+            body = clean_paragraphs(plain, limit=3)
             log("  matched annotation on: {}".format(best[1].get("fragment")))
         else:
             log("  no annotation matched this line")
@@ -371,7 +398,7 @@ def enrich_dialogue(entry, token):
         "source_name": "TMDB",
         "source_url": meta["url"],
         "meta": meta,
-        "body": paragraphs(data.get("overview")),
+        "body": clean_paragraphs(data.get("overview")),
     }
 
 
@@ -440,7 +467,7 @@ def enrich_passage(entry):
         "source_name": "Open Library",
         "source_url": url,
         "meta": meta,
-        "body": paragraphs(strip_markdown(description))[:2],
+        "body": clean_paragraphs(strip_markdown(description), limit=2),
     }
 
 
@@ -511,5 +538,4 @@ def main():
 
 
 if __name__ == "__main__":
-    return_code = main()
-    sys.exit(return_code)
+    sys.exit(main())
