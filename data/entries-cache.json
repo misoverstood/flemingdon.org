@@ -56,10 +56,24 @@
     "skip": false
   },
   {
+    "id": "recVYF1tH6aj3KMws",
+    "text": "Hello darkness, my old friend",
+    "type": "lyric",
+    "attribution": "Simon & Garfunkel",
+    "source": "The Sound of Silence",
+    "year": 1964,
+    "genius_id": "",
+    "tmdb_id": "",
+    "wiki_title": "",
+    "openlibrary_id": "",
+    "note": "",
+    "skip": false
+  },
+  {
     "id": "recfcyNH6HRlf9khH",
     "text": "Just wakin' up in the mornin', gotta thank God",
     "type": "lyric",
-    "attribution": "ice cube",
+    "attribution": "Ice Cube",
     "source": "It Was a Good Day",
     "year": 1992,
     "genius_id": "237",
