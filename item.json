@@ -1,30 +1,30 @@
 {
-  "generated": "2026-09-23T02:19:15Z",
-  "id": "recPLBj32YttA9KyR",
-  "text": "I'm gonna make him an offer he can't refuse",
+  "generated": "2026-09-23T02:49:54Z",
+  "id": "recMmzx0sYK2L3I0V",
+  "text": "I never had any friends later on like the ones I had when I was twelve. Jesus, does anyone?",
   "type": "dialogue",
-  "attribution": "Vito Corleone",
-  "source": "The Godfather",
-  "year": 1972,
+  "attribution": "Gordie Lachance",
+  "source": "Stand By Me",
+  "year": 1986,
   "note": "",
   "expansion": {
     "source_name": "TMDB",
-    "source_url": "https://www.themoviedb.org/movie/238",
+    "source_url": "https://www.themoviedb.org/movie/235",
     "meta": {
-      "title": "The Godfather",
-      "released": "1972",
+      "title": "Stand by Me",
+      "released": "1986",
       "lead_label": "Directed by",
       "leads": [
-        "Francis Ford Coppola"
+        "Rob Reiner"
       ],
       "genres": [
         "Drama",
-        "Crime"
+        "Adventure"
       ],
-      "url": "https://www.themoviedb.org/movie/238"
+      "url": "https://www.themoviedb.org/movie/235"
     },
     "body": [
-      "Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge."
+      "After learning that a boy their age has been accidentally killed near their rural homes, four boys decide to go see the body. Gordie, Vern, Chris, and Teddy encounter a mean junk man and a marsh full of leeches, but they also learn more about one another and their very different home lives. Just a lark at first, the boys' adventure evolves into a defining event in their lives."
     ]
   }
 }
