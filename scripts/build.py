@@ -15,6 +15,9 @@ Expansion sources by type:
 genius_id is optional: with it blank the build searches Genius using the
 attribution and source fields and logs which song it settled on.
 
+data/entries-cache.json is public (it lives in a public repo served by Pages),
+so it holds live rows only. Skipped and blank rows never leave Airtable.
+
 Env:
   AIRTABLE_TOKEN  personal access token, data.records:read  (required)
   GENIUS_TOKEN    Genius client access token                (lyrics)
@@ -494,10 +497,11 @@ def main():
     token = os.environ.get("AIRTABLE_TOKEN", "").strip()
 
     entries = None
+    fresh = False
     if token:
         try:
             entries = [normalise(r) for r in fetch_entries(token)]
-            write_json(CACHE_FILE, entries)
+            fresh = True
             log("fetched {} records from Airtable".format(len(entries)))
         except RuntimeError as err:
             log("Airtable fetch failed: {}".format(err))
@@ -515,6 +519,11 @@ def main():
     if not live:
         log("nothing eligible to publish, aborting")
         return 1
+
+    # The cache is public, so it only ever holds rows that are due to appear
+    # on the site. Skipped and blank rows stay private in Airtable.
+    if fresh:
+        write_json(CACHE_FILE, live)
 
     choice, used = pick(live, read_json(USED_FILE, []))
     log("picked {} ({}): {}".format(choice["id"], choice["type"], choice["text"][:60]))
