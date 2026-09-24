@@ -41,7 +41,8 @@
 
     if (item.type === "lyric") {
       rows.push(["Song", item.source || meta.title]);
-      rows.push(["Album", item.source && meta.album && meta.album !== item.source ? meta.album : null]);
+      var album = item.album || meta.album;
+      rows.push(["Album", album && album !== item.source ? album : null]);
       rows.push(["Released", meta.released || item.year]);
       rows.push(["Produced", join(meta.producers)]);
       rows.push(["Written", join(meta.writers)]);
