@@ -1,35 +1,34 @@
 {
-  "generated": "2026-09-23T14:23:19Z",
-  "id": "rec8EoapMleW1lR8v",
-  "text": "We ain't nothin' but mammals\nWell, some of us cannibals who cut other people open like cantaloupes",
-  "type": "lyric",
-  "attribution": "eminem",
-  "source": "The Real Slim Shady",
-  "year": 2000,
+  "generated": "2026-09-24T02:50:34Z",
+  "id": "recoyGriYffZdwR8O",
+  "text": "It was a bright cold day in April, and the clocks were striking thirteen.",
+  "type": "passage",
+  "attribution": "George Orwell",
+  "source": "1984",
+  "album": "",
+  "year": 1949,
   "note": "",
   "expansion": {
-    "source_name": "Genius",
-    "source_url": "https://genius.com/Eminem-the-real-slim-shady-lyrics",
+    "source_name": "Open Library",
+    "source_url": "https://openlibrary.org/works/OL1168083W",
     "meta": {
-      "title": "The Real Slim Shady",
-      "artist": "Eminem",
-      "album": "Confused? You Should Be (Album Sampler)",
-      "released": "April 18, 2000",
-      "producers": [
-        "Dr. Dre",
-        "Mel-Man"
+      "title": "Nineteen Eighty-Four",
+      "authors": [
+        "George Orwell",
+        "George Orwell",
+        "Georges Orwell"
       ],
-      "writers": [
-        "Eminem",
-        "Dr. Dre",
-        "Mel-Man",
-        "Tommy Coster"
+      "published": null,
+      "subjects": [
+        "futurology",
+        "censorship",
+        "surveillance",
+        "rebels"
       ],
-      "url": "https://genius.com/Eminem-the-real-slim-shady-lyrics"
+      "url": "https://openlibrary.org/works/OL1168083W"
     },
     "body": [
-      "Despite the universal “we’re all mammals” sentiment, Slim Shady doesn’t want you to forget he’s the kind of psychopath who looks at human flesh the way you might look at the makings of a nice fruit salad.",
-      "The long “A” sounds in “mammals”, along with repeated first syllables in “cantaloupe” and “cannibal” reinforce the rhythm of these bars. Since the realease of “The Real Slim Shady,” the unlikely pairing of “cantaloupe” and “cannibal” has been borrowed by a number of artists, including Earl Sweatshirt, JUNGLEPUSSY, Wakizashi, Mack Maine and Lord Infamous."
+      "Nineteen Eighty-Four: A Novel, often referred to as 1984, is a dystopian social science fiction novel by the English novelist George Orwell (the pen name of Eric Arthur Blair). It was published on 8 June 1949 by Secker & Warburg as Orwell's ninth and final book completed in his lifetime. Thematically, Nineteen Eighty-Four centres on the consequences of totalitarianism, mass surveillance, and repressive regimentation of persons and behaviours within society. Orwell, himself a democratic socialist, modelled the authoritarian government in the novel after Stalinist Russia. More broadly, the novel examines the role of truth and facts within politics and the ways in which they are manipulated."
     ]
   }
 }
