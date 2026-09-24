@@ -1,34 +1,12 @@
 {
-  "generated": "2026-09-24T02:50:34Z",
-  "id": "recoyGriYffZdwR8O",
-  "text": "It was a bright cold day in April, and the clocks were striking thirteen.",
-  "type": "passage",
-  "attribution": "George Orwell",
-  "source": "1984",
+  "generated": "2026-09-24T14:23:08Z",
+  "id": "recBjSz0mbIZFaIHk",
+  "text": "The fish don't care when it rains",
+  "type": "quote",
+  "attribution": "",
+  "source": "Where it's from: song, film, show or book. Wins over the API's own title.",
   "album": "",
-  "year": 1949,
+  "year": null,
   "note": "",
-  "expansion": {
-    "source_name": "Open Library",
-    "source_url": "https://openlibrary.org/works/OL1168083W",
-    "meta": {
-      "title": "Nineteen Eighty-Four",
-      "authors": [
-        "George Orwell",
-        "George Orwell",
-        "Georges Orwell"
-      ],
-      "published": null,
-      "subjects": [
-        "futurology",
-        "censorship",
-        "surveillance",
-        "rebels"
-      ],
-      "url": "https://openlibrary.org/works/OL1168083W"
-    },
-    "body": [
-      "Nineteen Eighty-Four: A Novel, often referred to as 1984, is a dystopian social science fiction novel by the English novelist George Orwell (the pen name of Eric Arthur Blair). It was published on 8 June 1949 by Secker & Warburg as Orwell's ninth and final book completed in his lifetime. Thematically, Nineteen Eighty-Four centres on the consequences of totalitarianism, mass surveillance, and repressive regimentation of persons and behaviours within society. Orwell, himself a democratic socialist, modelled the authoritarian government in the novel after Stalinist Russia. More broadly, the novel examines the role of truth and facts within politics and the ways in which they are manipulated."
-    ]
-  }
+  "expansion": null
 }
