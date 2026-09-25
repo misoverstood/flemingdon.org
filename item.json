@@ -1,12 +1,35 @@
 {
-  "generated": "2026-09-24T14:23:08Z",
-  "id": "recBjSz0mbIZFaIHk",
-  "text": "The fish don't care when it rains",
-  "type": "quote",
-  "attribution": "",
-  "source": "Where it's from: song, film, show or book. Wins over the API's own title.",
-  "album": "",
-  "year": null,
+  "generated": "2026-09-25T14:43:15Z",
+  "id": "rec97w20wD77GO2KU",
+  "text": "I switched my motto; instead of sayin', \"Fuck tomorrow!\"\nThat buck that bought a bottle could've struck the lotto",
+  "type": "lyric",
+  "attribution": "Nas",
+  "source": "Life’s a Bitch",
+  "album": "Illmatic",
+  "year": 1994,
   "note": "",
-  "expansion": null
+  "expansion": {
+    "source_name": "Genius",
+    "source_url": "https://genius.com/Nas-lifes-a-bitch-lyrics",
+    "meta": {
+      "title": "Life’s a Bitch",
+      "artist": "Nas",
+      "album": "Illmatic",
+      "released": "April 19, 1994",
+      "producers": [
+        "L.E.S."
+      ],
+      "writers": [
+        "AZ",
+        "Nas",
+        "Oliver Scott",
+        "Olu Dara"
+      ],
+      "url": "https://genius.com/Nas-lifes-a-bitch-lyrics"
+    },
+    "body": [
+      "Nas has gotten wiser with age; he used to spend money for immediate pleasures like getting drunk, now he thinks it best to plan for the future.",
+      "Instead of wasting money, he realizes every dollar could be saved or invested. Although participating in the lottery doesn’t seem like a sign of maturity, Nas is simply using this image as a metaphor for his growth. It all connects to the theme established at the beginning of this verse–the reverence for being alive."
+    ]
+  }
 }
