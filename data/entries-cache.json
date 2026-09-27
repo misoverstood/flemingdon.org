@@ -75,6 +75,21 @@
     "skip": false
   },
   {
+    "id": "recJlPPRGcvkMurDw",
+    "text": "My skin is my sin, look at my complexion",
+    "type": "lyric",
+    "attribution": "Ice Cube",
+    "source": "My Skin is My Sin",
+    "album": "Bootlegs & B-Sides",
+    "year": 1994,
+    "genius_id": "",
+    "tmdb_id": "",
+    "wiki_title": "",
+    "openlibrary_id": "",
+    "note": "",
+    "skip": false
+  },
+  {
     "id": "recMmzx0sYK2L3I0V",
     "text": "I never had any friends later on like the ones I had when I was twelve. Jesus, does anyone?",
     "type": "dialogue",
@@ -135,6 +150,21 @@
     "skip": false
   },
   {
+    "id": "recavzjg8N5Ss9nus",
+    "text": "How did you know you could do that?\n\nI just never thought I couldn't.",
+    "type": "dialogue",
+    "attribution": "Lighting McQueen",
+    "source": "Where it's from: song, film, show or book. Wins over the API's own title.",
+    "album": "Cars 3",
+    "year": 2017,
+    "genius_id": "",
+    "tmdb_id": "",
+    "wiki_title": "",
+    "openlibrary_id": "",
+    "note": "",
+    "skip": false
+  },
+  {
     "id": "recfcyNH6HRlf9khH",
     "text": "Just wakin' up in the mornin', gotta thank God",
     "type": "lyric",
@@ -143,6 +173,21 @@
     "album": "",
     "year": 1992,
     "genius_id": "237",
+    "tmdb_id": "",
+    "wiki_title": "",
+    "openlibrary_id": "",
+    "note": "",
+    "skip": false
+  },
+  {
+    "id": "recjezTibNvE31UIq",
+    "text": "But they all didn't see\nThe little bit of sadness in me",
+    "type": "lyric",
+    "attribution": "Kid Cudi",
+    "source": "Soundtrack 2 My Life",
+    "album": "Man on the Moon: The End of Day",
+    "year": 2009,
+    "genius_id": "",
     "tmdb_id": "",
     "wiki_title": "",
     "openlibrary_id": "",
