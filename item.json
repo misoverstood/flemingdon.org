@@ -1,34 +1,12 @@
 {
-  "generated": "2026-09-27T14:48:47Z",
-  "id": "recJlPPRGcvkMurDw",
-  "text": "My skin is my sin, look at my complexion",
-  "type": "lyric",
-  "attribution": "Ice Cube",
-  "source": "My Skin is My Sin",
-  "album": "Bootlegs & B-Sides",
-  "year": 1994,
+  "generated": "2026-09-28T17:47:43Z",
+  "id": "recAjIJZFzP9UzNYx",
+  "text": "Not my clowns, not my circus",
+  "type": "quote",
+  "attribution": "",
+  "source": "",
+  "album": "",
+  "year": null,
   "note": "",
-  "expansion": {
-    "source_name": "Genius",
-    "source_url": "https://genius.com/Ice-cube-my-skin-is-my-sin-lyrics",
-    "meta": {
-      "title": "My Skin is My Sin",
-      "artist": "Ice Cube",
-      "album": "Bootlegs & B-Sides",
-      "released": "November 22, 1994",
-      "producers": [
-        "Doctor Jam",
-        "Madness 4 Real"
-      ],
-      "writers": [
-        "Doctor Jam",
-        "Ice Cube",
-        "Madness 4 Real"
-      ],
-      "url": "https://genius.com/Ice-cube-my-skin-is-my-sin-lyrics"
-    },
-    "body": [
-      "He’s guilty until proven innocent for the simple fact that he’s black."
-    ]
-  }
+  "expansion": null
 }
