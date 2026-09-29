@@ -18,7 +18,8 @@
   }
 
   function join(parts, sep) {
-    return parts.filter(function (p) { return p; }).join(sep || ", ");
+    // Missing lists arrive as undefined when an entry has no expansion.
+    return (Array.isArray(parts) ? parts : []).filter(function (p) { return p; }).join(sep || ", ");
   }
 
   // Only https links may become clickable. Source URLs arrive from third-party
