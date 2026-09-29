@@ -48,7 +48,7 @@
       rows.push(["Produced", join(meta.producers)]);
       rows.push(["Written", join(meta.writers)]);
     } else if (item.type === "dialogue") {
-      rows.push([meta.title ? "Title" : null, meta.title || item.source]);
+      rows.push(["Title", item.source || meta.title]);
       rows.push(["Released", meta.released || item.year]);
       rows.push([meta.lead_label || "Directed by", join(meta.leads)]);
       rows.push(["Genre", join(meta.genres)]);
