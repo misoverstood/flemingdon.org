@@ -1,12 +1,34 @@
 {
-  "generated": "2026-09-29T16:05:51Z",
-  "id": "recavzjg8N5Ss9nus",
-  "text": "How did you know you could do that?\n\nI just never thought I couldn't.",
-  "type": "dialogue",
-  "attribution": "Lightning McQueen",
-  "source": "Cars 3",
-  "album": "",
-  "year": 2017,
+  "generated": "2026-09-30T16:03:31Z",
+  "id": "recjezTibNvE31UIq",
+  "text": "But they all didn't see\nThe little bit of sadness in me",
+  "type": "lyric",
+  "attribution": "Kid Cudi",
+  "source": "Soundtrack 2 My Life",
+  "album": "Man on the Moon: The End of Day",
+  "year": 2009,
   "note": "",
-  "expansion": null
+  "expansion": {
+    "source_name": "Genius",
+    "source_url": "https://genius.com/Kid-cudi-soundtrack-2-my-life-lyrics",
+    "meta": {
+      "title": "Soundtrack 2 My Life",
+      "artist": "Kid Cudi",
+      "album": "Man on the Moon: The End of Day",
+      "released": "September 15, 2009",
+      "producers": [
+        "Emile Haynie"
+      ],
+      "writers": [
+        "Emile Haynie",
+        "Kid Cudi"
+      ],
+      "url": "https://genius.com/Kid-cudi-soundtrack-2-my-life-lyrics"
+    },
+    "body": [
+      "Though his family treated him all kindly, they weren’t aware of his sad feelings. Not because they weren’t empathic, but rather because he wouldn’t show a sign. He wouldn’t open up, he kept to himself. Cudi explained:",
+      "This album was my way of finally letting out a lot of feelings that I’ve yet to even mention to my mother.",
+      "She worries about me anyway, but I think the album is gonna open her eyes about a lot of stuff."
+    ]
+  }
 }
