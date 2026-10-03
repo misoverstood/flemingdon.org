@@ -1,12 +1,31 @@
 {
-  "generated": "2026-10-02T15:57:17Z",
-  "id": "recAjIJZFzP9UzNYx",
-  "text": "Not my clowns, not my circus",
-  "type": "quote",
-  "attribution": "",
-  "source": "",
+  "generated": "2026-10-03T14:24:28Z",
+  "id": "recBjSz0mbIZFaIHk",
+  "text": "The fish don't care when it rains",
+  "type": "dialogue",
+  "attribution": "Jennifer Msumba",
+  "source": "The Fish Don't Care When It Rains",
   "album": "",
   "year": null,
   "note": "",
-  "expansion": null
+  "expansion": {
+    "source_name": "TMDB",
+    "source_url": "https://www.themoviedb.org/movie/1748069",
+    "meta": {
+      "title": "The Fish Don't Care When It Rains",
+      "released": "2026",
+      "lead_label": "Directed by",
+      "leads": [
+        "Siobhan McDonnell",
+        "Jen Msumba"
+      ],
+      "genres": [
+        "Documentary"
+      ],
+      "url": "https://www.themoviedb.org/movie/1748069"
+    },
+    "body": [
+      "How far would you go to change a child the world can’t understand? One autistic artist survives a hidden system of abuse built to correct her."
+    ]
+  }
 }
