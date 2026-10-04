@@ -1,31 +1,31 @@
 {
-  "generated": "2026-10-03T14:24:28Z",
-  "id": "recBjSz0mbIZFaIHk",
-  "text": "The fish don't care when it rains",
+  "generated": "2026-10-04T14:57:03Z",
+  "id": "recMmzx0sYK2L3I0V",
+  "text": "I never had any friends later on like the ones I had when I was twelve. Jesus, does anyone?",
   "type": "dialogue",
-  "attribution": "Jennifer Msumba",
-  "source": "The Fish Don't Care When It Rains",
+  "attribution": "Gordie Lachance",
+  "source": "Stand By Me",
   "album": "",
-  "year": null,
+  "year": 1986,
   "note": "",
   "expansion": {
     "source_name": "TMDB",
-    "source_url": "https://www.themoviedb.org/movie/1748069",
+    "source_url": "https://www.themoviedb.org/movie/235",
     "meta": {
-      "title": "The Fish Don't Care When It Rains",
-      "released": "2026",
+      "title": "Stand by Me",
+      "released": "1986",
       "lead_label": "Directed by",
       "leads": [
-        "Siobhan McDonnell",
-        "Jen Msumba"
+        "Rob Reiner"
       ],
       "genres": [
-        "Documentary"
+        "Drama",
+        "Adventure"
       ],
-      "url": "https://www.themoviedb.org/movie/1748069"
+      "url": "https://www.themoviedb.org/movie/235"
     },
     "body": [
-      "How far would you go to change a child the world can’t understand? One autistic artist survives a hidden system of abuse built to correct her."
+      "After learning that a boy their age has been accidentally killed near their rural homes, four boys decide to go see the body. Gordie, Vern, Chris, and Teddy encounter a mean junk man and a marsh full of leeches, but they also learn more about one another and their very different home lives. Just a lark at first, the boys' adventure evolves into a defining event in their lives."
     ]
   }
 }
