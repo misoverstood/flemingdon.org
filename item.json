@@ -1,31 +1,39 @@
 {
-  "generated": "2026-10-04T14:57:03Z",
-  "id": "recMmzx0sYK2L3I0V",
-  "text": "I never had any friends later on like the ones I had when I was twelve. Jesus, does anyone?",
-  "type": "dialogue",
-  "attribution": "Gordie Lachance",
-  "source": "Stand By Me",
-  "album": "",
-  "year": 1986,
+  "generated": "2026-10-05T18:47:59Z",
+  "id": "recxV20b3nFOKTW18",
+  "text": "Psycho, I'm liable to go Michael, take your pick\nJackson, Tyson, Jordan, Game 6",
+  "type": "lyric",
+  "attribution": "Jay-Z",
+  "source": "Niggas in Paris",
+  "album": "Watch the Throne",
+  "year": 2011,
   "note": "",
   "expansion": {
-    "source_name": "TMDB",
-    "source_url": "https://www.themoviedb.org/movie/235",
+    "source_name": "Genius",
+    "source_url": "https://genius.com/Jay-z-and-kanye-west-niggas-in-paris-lyrics",
     "meta": {
-      "title": "Stand by Me",
-      "released": "1986",
-      "lead_label": "Directed by",
-      "leads": [
-        "Rob Reiner"
+      "title": "Niggas in Paris",
+      "artist": "JAŸ-Z",
+      "album": "Watch the Throne",
+      "released": "September 13, 2011",
+      "producers": [
+        "Kanye West",
+        "Hit-Boy",
+        "MIKE DEAN",
+        "Anthony Kilhoffer"
       ],
-      "genres": [
-        "Drama",
-        "Adventure"
+      "writers": [
+        "JAŸ-Z",
+        "Kanye West",
+        "Hit-Boy",
+        "MIKE DEAN"
       ],
-      "url": "https://www.themoviedb.org/movie/235"
+      "url": "https://genius.com/Jay-z-and-kanye-west-niggas-in-paris-lyrics"
     },
     "body": [
-      "After learning that a boy their age has been accidentally killed near their rural homes, four boys decide to go see the body. Gordie, Vern, Chris, and Teddy encounter a mean junk man and a marsh full of leeches, but they also learn more about one another and their very different home lives. Just a lark at first, the boys' adventure evolves into a defining event in their lives."
+      "There is a history of genius-level performances by individuals named Michael: Michael Jackson, a.k.a. the “King of Pop”; Mike Tyson, the former Heavyweight Boxing Champion of the World; and Michael Jordan, widely considered to be the greatest basketball player of all time.",
+      "This image is taken from the music video for Michael Jackson’s single, “Jam,” found on his November 1991 album, Dangerous.",
+      "Five of Jordan’s six NBA championships ended in the sixth of a seven game series. For example, his 1998 winning-shot in Game 6 against the Utah Jazz proved to be legendary. It’s worth noting that Jordan never played a Game 7 in the NBA Finals."
     ]
   }
 }
