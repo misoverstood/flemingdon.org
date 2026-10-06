@@ -1,39 +1,32 @@
 {
-  "generated": "2026-10-05T18:47:59Z",
-  "id": "recxV20b3nFOKTW18",
-  "text": "Psycho, I'm liable to go Michael, take your pick\nJackson, Tyson, Jordan, Game 6",
-  "type": "lyric",
-  "attribution": "Jay-Z",
-  "source": "Niggas in Paris",
-  "album": "Watch the Throne",
-  "year": 2011,
+  "generated": "2026-10-06T16:13:55Z",
+  "id": "recoyGriYffZdwR8O",
+  "text": "It was a bright cold day in April, and the clocks were striking thirteen.",
+  "type": "passage",
+  "attribution": "George Orwell",
+  "source": "1984",
+  "album": "",
+  "year": 1949,
   "note": "",
   "expansion": {
-    "source_name": "Genius",
-    "source_url": "https://genius.com/Jay-z-and-kanye-west-niggas-in-paris-lyrics",
+    "source_name": "Open Library",
+    "source_url": "https://openlibrary.org/works/OL1168083W",
     "meta": {
-      "title": "Niggas in Paris",
-      "artist": "JAŸ-Z",
-      "album": "Watch the Throne",
-      "released": "September 13, 2011",
-      "producers": [
-        "Kanye West",
-        "Hit-Boy",
-        "MIKE DEAN",
-        "Anthony Kilhoffer"
+      "title": "Nineteen Eighty-Four",
+      "authors": [
+        "George Orwell"
       ],
-      "writers": [
-        "JAŸ-Z",
-        "Kanye West",
-        "Hit-Boy",
-        "MIKE DEAN"
+      "published": null,
+      "subjects": [
+        "futurology",
+        "censorship",
+        "surveillance",
+        "rebels"
       ],
-      "url": "https://genius.com/Jay-z-and-kanye-west-niggas-in-paris-lyrics"
+      "url": "https://openlibrary.org/works/OL1168083W"
     },
     "body": [
-      "There is a history of genius-level performances by individuals named Michael: Michael Jackson, a.k.a. the “King of Pop”; Mike Tyson, the former Heavyweight Boxing Champion of the World; and Michael Jordan, widely considered to be the greatest basketball player of all time.",
-      "This image is taken from the music video for Michael Jackson’s single, “Jam,” found on his November 1991 album, Dangerous.",
-      "Five of Jordan’s six NBA championships ended in the sixth of a seven game series. For example, his 1998 winning-shot in Game 6 against the Utah Jazz proved to be legendary. It’s worth noting that Jordan never played a Game 7 in the NBA Finals."
+      "Nineteen Eighty-Four: A Novel, often referred to as 1984, is a dystopian social science fiction novel by the English novelist George Orwell (the pen name of Eric Arthur Blair). It was published on 8 June 1949 by Secker & Warburg as Orwell's ninth and final book completed in his lifetime. Thematically, Nineteen Eighty-Four centres on the consequences of totalitarianism, mass surveillance, and repressive regimentation of persons and behaviours within society. Orwell, himself a democratic socialist, modelled the authoritarian government in the novel after Stalinist Russia. More broadly, the novel examines the role of truth and facts within politics and the ways in which they are manipulated."
     ]
   }
 }
