@@ -1,34 +1,31 @@
 {
-  "generated": "2026-10-07T16:52:41Z",
-  "id": "recJlPPRGcvkMurDw",
-  "text": "My skin is my sin, look at my complexion",
-  "type": "lyric",
-  "attribution": "Ice Cube",
-  "source": "My Skin is My Sin",
-  "album": "Bootlegs & B-Sides",
+  "generated": "2026-10-07T18:22:47Z",
+  "id": "recInkXlujcuPHfk8",
+  "text": "Some birds aren't meant to be caged.",
+  "type": "dialogue",
+  "attribution": "Red",
+  "source": "The Shawshank Redemption",
+  "album": "",
   "year": 1994,
   "note": "",
   "expansion": {
-    "source_name": "Genius",
-    "source_url": "https://genius.com/Ice-cube-my-skin-is-my-sin-lyrics",
+    "source_name": "TMDB",
+    "source_url": "https://www.themoviedb.org/movie/278",
     "meta": {
-      "title": "My Skin is My Sin",
-      "artist": "Ice Cube",
-      "album": "Bootlegs & B-Sides",
-      "released": "November 22, 1994",
-      "producers": [
-        "Doctor Jam",
-        "Madness 4 Real"
+      "title": "The Shawshank Redemption",
+      "released": "1994",
+      "lead_label": "Directed by",
+      "leads": [
+        "Frank Darabont"
       ],
-      "writers": [
-        "Doctor Jam",
-        "Ice Cube",
-        "Madness 4 Real"
+      "genres": [
+        "Drama",
+        "Crime"
       ],
-      "url": "https://genius.com/Ice-cube-my-skin-is-my-sin-lyrics"
+      "url": "https://www.themoviedb.org/movie/278"
     },
     "body": [
-      "He’s guilty until proven innocent for the simple fact that he’s black."
+      "Imprisoned in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope."
     ]
   }
 }
