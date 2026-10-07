@@ -1,32 +1,34 @@
 {
-  "generated": "2026-10-06T16:13:55Z",
-  "id": "recoyGriYffZdwR8O",
-  "text": "It was a bright cold day in April, and the clocks were striking thirteen.",
-  "type": "passage",
-  "attribution": "George Orwell",
-  "source": "1984",
-  "album": "",
-  "year": 1949,
+  "generated": "2026-10-07T16:52:41Z",
+  "id": "recJlPPRGcvkMurDw",
+  "text": "My skin is my sin, look at my complexion",
+  "type": "lyric",
+  "attribution": "Ice Cube",
+  "source": "My Skin is My Sin",
+  "album": "Bootlegs & B-Sides",
+  "year": 1994,
   "note": "",
   "expansion": {
-    "source_name": "Open Library",
-    "source_url": "https://openlibrary.org/works/OL1168083W",
+    "source_name": "Genius",
+    "source_url": "https://genius.com/Ice-cube-my-skin-is-my-sin-lyrics",
     "meta": {
-      "title": "Nineteen Eighty-Four",
-      "authors": [
-        "George Orwell"
+      "title": "My Skin is My Sin",
+      "artist": "Ice Cube",
+      "album": "Bootlegs & B-Sides",
+      "released": "November 22, 1994",
+      "producers": [
+        "Doctor Jam",
+        "Madness 4 Real"
       ],
-      "published": null,
-      "subjects": [
-        "futurology",
-        "censorship",
-        "surveillance",
-        "rebels"
+      "writers": [
+        "Doctor Jam",
+        "Ice Cube",
+        "Madness 4 Real"
       ],
-      "url": "https://openlibrary.org/works/OL1168083W"
+      "url": "https://genius.com/Ice-cube-my-skin-is-my-sin-lyrics"
     },
     "body": [
-      "Nineteen Eighty-Four: A Novel, often referred to as 1984, is a dystopian social science fiction novel by the English novelist George Orwell (the pen name of Eric Arthur Blair). It was published on 8 June 1949 by Secker & Warburg as Orwell's ninth and final book completed in his lifetime. Thematically, Nineteen Eighty-Four centres on the consequences of totalitarianism, mass surveillance, and repressive regimentation of persons and behaviours within society. Orwell, himself a democratic socialist, modelled the authoritarian government in the novel after Stalinist Russia. More broadly, the novel examines the role of truth and facts within politics and the ways in which they are manipulated."
+      "He’s guilty until proven innocent for the simple fact that he’s black."
     ]
   }
 }
