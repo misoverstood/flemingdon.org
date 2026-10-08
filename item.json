@@ -1,31 +1,12 @@
 {
-  "generated": "2026-10-07T18:22:47Z",
-  "id": "recInkXlujcuPHfk8",
-  "text": "Some birds aren't meant to be caged.",
-  "type": "dialogue",
-  "attribution": "Red",
-  "source": "The Shawshank Redemption",
+  "generated": "2026-10-08T16:53:02Z",
+  "id": "recJqznM5EMtJFWZj",
+  "text": "You can't change the people around you, but you can change the people around you.",
+  "type": "quote",
+  "attribution": "",
+  "source": "",
   "album": "",
-  "year": 1994,
+  "year": null,
   "note": "",
-  "expansion": {
-    "source_name": "TMDB",
-    "source_url": "https://www.themoviedb.org/movie/278",
-    "meta": {
-      "title": "The Shawshank Redemption",
-      "released": "1994",
-      "lead_label": "Directed by",
-      "leads": [
-        "Frank Darabont"
-      ],
-      "genres": [
-        "Drama",
-        "Crime"
-      ],
-      "url": "https://www.themoviedb.org/movie/278"
-    },
-    "body": [
-      "Imprisoned in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope."
-    ]
-  }
+  "expansion": null
 }
