@@ -1,12 +1,30 @@
 {
-  "generated": "2026-10-10T15:33:06Z",
-  "id": "rece4aaelhjy3WTvB",
-  "text": "A person is smart. People are dumb.",
+  "generated": "2026-10-11T15:55:58Z",
+  "id": "reckKCaQRQIedMw65",
+  "text": "If you’d wanted to do me, I’d already be done. But there ain’t nothing you fear more than a bad headline, is there? You’d rather live in shit than let the world see you work a shovel.",
   "type": "dialogue",
-  "attribution": "K",
-  "source": "Men in Black",
+  "attribution": "Cedric Daniels",
+  "source": "The Wire",
   "album": "",
-  "year": 1997,
-  "note": "",
-  "expansion": null
+  "year": null,
+  "note": "S1.E12 — Cleaning Up",
+  "expansion": {
+    "source_name": "TMDB",
+    "source_url": "https://www.themoviedb.org/movie/1438",
+    "meta": {
+      "title": "Regoch",
+      "released": "2006",
+      "lead_label": "Directed by",
+      "leads": [
+        "Helena Bulaja"
+      ],
+      "genres": [
+        "Animation"
+      ],
+      "url": "https://www.themoviedb.org/movie/1438"
+    },
+    "body": [
+      "It is a romantic story about giant Regoch and fairy Kosjenka on their surreal adventures through unknown world. This short experimental / animated film is based on a story written in 1916 by Ivana Brlic Mazuranic - the Slavic Tolkien. This film is one of the 8 fairytales from the collection of internationally recognized interactive book project \"Croatian Tales of Long Ago\" - - FlashForward FF 2002 winner in Story category"
+    ]
+  }
 }
