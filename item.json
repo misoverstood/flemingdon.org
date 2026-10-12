@@ -1,33 +1,12 @@
 {
-  "generated": "2026-10-12T00:14:02Z",
-  "id": "recVYF1tH6aj3KMws",
-  "text": "Hello darkness, my old friend.",
-  "type": "lyric",
-  "attribution": "Simon & Garfunkel",
-  "source": "The Sound of Silence",
+  "generated": "2026-10-12T19:16:38Z",
+  "id": "recpBjI8IhrTyTFUD",
+  "text": "Don't be incredible. Be incredulous.",
+  "type": "quote",
+  "attribution": "",
+  "source": "",
   "album": "",
-  "year": 1964,
+  "year": null,
   "note": "",
-  "expansion": {
-    "source_name": "Genius",
-    "source_url": "https://genius.com/Simon-and-garfunkel-the-sound-of-silence-lyrics",
-    "meta": {
-      "title": "The Sound of Silence",
-      "artist": "Simon & Garfunkel",
-      "album": "Sounds of Silence",
-      "released": "September 12, 1965",
-      "producers": [
-        "Tom Wilson"
-      ],
-      "writers": [
-        "Paul Simon"
-      ],
-      "url": "https://genius.com/Simon-and-garfunkel-the-sound-of-silence-lyrics"
-    },
-    "body": [
-      "The first line highlights the key theme of the song, alienation and the inability for people to talk to one another.",
-      "He takes comfort in venting his thoughts and emotions to the darkness, because it is the only “person” willing to listen.",
-      "I used to go off in the bathroom, because the bathroom had tiles, so it was a slight echo chamber. I’d turn on the faucet so that water would run — I like that sound, it’s very soothing to me — and I’d play. In the dark."
-    ]
-  }
+  "expansion": null
 }
