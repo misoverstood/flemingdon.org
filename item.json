@@ -1,31 +1,34 @@
 {
-  "generated": "2026-10-13T17:06:28Z",
-  "id": "recSqIPJd5PW6Tp5M",
-  "text": "See, the thing is, you only got to fuck up once. Be a little slow, be a little late, just once. And how you ain't gonna never be slow, never be late? You can't plan for no shit like this, man. It's life.",
-  "type": "dialogue",
-  "attribution": "Avon Barksdale",
-  "source": "The Wire",
-  "album": "",
-  "year": null,
-  "note": "S1.E5 — The Pager",
+  "generated": "2026-10-14T14:38:34Z",
+  "id": "recDpYLJWu2pwQ63e",
+  "text": "My skin is my sin, look at my complexion.",
+  "type": "lyric",
+  "attribution": "Ice Cube",
+  "source": "My Skin is My Sin",
+  "album": "Bootlegs & B-Sides",
+  "year": 1994,
+  "note": "",
   "expansion": {
-    "source_name": "TMDB",
-    "source_url": "https://www.themoviedb.org/tv/1438",
+    "source_name": "Genius",
+    "source_url": "https://genius.com/Ice-cube-my-skin-is-my-sin-lyrics",
     "meta": {
-      "title": "The Wire",
-      "released": "2002",
-      "lead_label": "Created by",
-      "leads": [
-        "David Simon"
+      "title": "My Skin is My Sin",
+      "artist": "Ice Cube",
+      "album": "Bootlegs & B-Sides",
+      "released": "November 22, 1994",
+      "producers": [
+        "Doctor Jam",
+        "Madness 4 Real"
       ],
-      "genres": [
-        "Crime",
-        "Drama"
+      "writers": [
+        "Doctor Jam",
+        "Ice Cube",
+        "Madness 4 Real"
       ],
-      "url": "https://www.themoviedb.org/tv/1438"
+      "url": "https://genius.com/Ice-cube-my-skin-is-my-sin-lyrics"
     },
     "body": [
-      "Told from the points of view of both the Baltimore homicide and narcotics detectives and their targets, the series captures a universe in which the national war on drugs has become a permanent, self-sustaining bureaucracy, and distinctions between good and evil are routinely obliterated."
+      "He’s guilty until proven innocent for the simple fact that he’s black."
     ]
   }
 }
