@@ -1,12 +1,23 @@
 {
-  "generated": "2026-10-15T14:22:39Z",
-  "id": "recpgG5BoLAfqlqpK",
-  "text": "Not my clowns, not my circus.",
+  "generated": "2026-10-16T14:11:16Z",
+  "id": "rec5HOBRXqMWH6TxU",
+  "text": "The fish,\nEven in the fisherman's net,\nStill carries,\nThe smell of the sea.",
   "type": "quote",
-  "attribution": "",
+  "attribution": "Mourid Barghouti",
   "source": "",
   "album": "",
   "year": null,
   "note": "",
-  "expansion": null
+  "expansion": {
+    "source_name": "Wikipedia",
+    "source_url": "https://en.wikipedia.org/wiki/Mourid_Barghouti",
+    "meta": {
+      "title": "Mourid Barghouti",
+      "subtitle": "Palestinian poet and writer (1944–2021)",
+      "url": "https://en.wikipedia.org/wiki/Mourid_Barghouti"
+    },
+    "body": [
+      "Mourid Barghouti was a Palestinian poet and writer."
+    ]
+  }
 }
