@@ -1,23 +1,30 @@
 {
-  "generated": "2026-10-16T14:11:16Z",
-  "id": "rec5HOBRXqMWH6TxU",
-  "text": "The fish,\nEven in the fisherman's net,\nStill carries,\nThe smell of the sea.",
-  "type": "quote",
-  "attribution": "Mourid Barghouti",
-  "source": "",
+  "generated": "2026-10-17T13:08:39Z",
+  "id": "rec1wyghgaOVc9YNO",
+  "text": "I wish there was a way to know you’re in the good old days before you’ve actually left them.",
+  "type": "dialogue",
+  "attribution": "Andy Bernard",
+  "source": "The Office",
   "album": "",
-  "year": null,
+  "year": 2013,
   "note": "",
   "expansion": {
-    "source_name": "Wikipedia",
-    "source_url": "https://en.wikipedia.org/wiki/Mourid_Barghouti",
+    "source_name": "TMDB",
+    "source_url": "https://www.themoviedb.org/tv/2316",
     "meta": {
-      "title": "Mourid Barghouti",
-      "subtitle": "Palestinian poet and writer (1944–2021)",
-      "url": "https://en.wikipedia.org/wiki/Mourid_Barghouti"
+      "title": "The Office",
+      "released": "2005",
+      "lead_label": "Created by",
+      "leads": [
+        "Greg Daniels"
+      ],
+      "genres": [
+        "Comedy"
+      ],
+      "url": "https://www.themoviedb.org/tv/2316"
     },
     "body": [
-      "Mourid Barghouti was a Palestinian poet and writer."
+      "The everyday lives of office employees in the Scranton, Pennsylvania branch of the fictional Dunder Mifflin Paper Company."
     ]
   }
 }
