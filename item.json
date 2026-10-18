@@ -1,30 +1,32 @@
 {
-  "generated": "2026-10-17T13:08:39Z",
-  "id": "rec1wyghgaOVc9YNO",
-  "text": "I wish there was a way to know you’re in the good old days before you’ve actually left them.",
+  "generated": "2026-10-18T13:30:45Z",
+  "id": "recWxU48qXJ2pgW2T",
+  "text": "It gets easier. Every day it gets a little easier. But you gotta do it every day —that’s the hard part. But it does get easier.",
   "type": "dialogue",
-  "attribution": "Andy Bernard",
-  "source": "The Office",
+  "attribution": "BoJack Horseman",
+  "source": "BoJack Horseman",
   "album": "",
-  "year": 2013,
+  "year": 2015,
   "note": "",
   "expansion": {
     "source_name": "TMDB",
-    "source_url": "https://www.themoviedb.org/tv/2316",
+    "source_url": "https://www.themoviedb.org/tv/61222",
     "meta": {
-      "title": "The Office",
-      "released": "2005",
+      "title": "BoJack Horseman",
+      "released": "2014",
       "lead_label": "Created by",
       "leads": [
-        "Greg Daniels"
+        "Raphael Bob-Waksberg"
       ],
       "genres": [
-        "Comedy"
+        "Animation",
+        "Comedy",
+        "Drama"
       ],
-      "url": "https://www.themoviedb.org/tv/2316"
+      "url": "https://www.themoviedb.org/tv/61222"
     },
     "body": [
-      "The everyday lives of office employees in the Scranton, Pennsylvania branch of the fictional Dunder Mifflin Paper Company."
+      "Meet the most beloved sitcom horse of the '90s, 20 years later. He's a curmudgeon with a heart of...not quite gold...but something like gold. Copper?"
     ]
   }
 }
