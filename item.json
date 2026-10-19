@@ -1,32 +1,36 @@
 {
-  "generated": "2026-10-18T13:30:45Z",
-  "id": "recWxU48qXJ2pgW2T",
-  "text": "It gets easier. Every day it gets a little easier. But you gotta do it every day —that’s the hard part. But it does get easier.",
-  "type": "dialogue",
-  "attribution": "BoJack Horseman",
-  "source": "BoJack Horseman",
-  "album": "",
-  "year": 2015,
+  "generated": "2026-10-19T16:36:59Z",
+  "id": "rec5Mrtaooq8aD1oj",
+  "text": "Here I go, deep type flow\nJacques Cousteau could never get this low.",
+  "type": "lyric",
+  "attribution": "Wu-Tang Clan",
+  "source": "Da Mystery of Chessboxin’",
+  "album": "Enter the Wu-Tang (36 Chambers)",
+  "year": null,
   "note": "",
   "expansion": {
-    "source_name": "TMDB",
-    "source_url": "https://www.themoviedb.org/tv/61222",
+    "source_name": "Genius",
+    "source_url": "https://genius.com/Wu-tang-clan-da-mystery-of-chessboxin-lyrics",
     "meta": {
-      "title": "BoJack Horseman",
-      "released": "2014",
-      "lead_label": "Created by",
-      "leads": [
-        "Raphael Bob-Waksberg"
+      "title": "Da Mystery of Chessboxin’",
+      "artist": "Wu-Tang Clan",
+      "album": "Enter the Wu-Tang (36 Chambers)",
+      "released": "November 9, 1993",
+      "producers": [
+        "RZA"
       ],
-      "genres": [
-        "Animation",
-        "Comedy",
-        "Drama"
+      "writers": [
+        "Ghostface Killah",
+        "GZA",
+        "Inspectah Deck",
+        "Method Man"
       ],
-      "url": "https://www.themoviedb.org/tv/61222"
+      "url": "https://genius.com/Wu-tang-clan-da-mystery-of-chessboxin-lyrics"
     },
     "body": [
-      "Meet the most beloved sitcom horse of the '90s, 20 years later. He's a curmudgeon with a heart of...not quite gold...but something like gold. Copper?"
+      "Jacques Cousteau was a French diver who explored the deep seas. But even he can’t get as “deep” or “low” as ODB’s twisted lyrics.",
+      "Possibly inspired by a line from Biz Markie in Marley Marl’s 1988 song “We Write the Songs” by:",
+      "Now I'ma get deep like Jacques Cousteau"
     ]
   }
 }
