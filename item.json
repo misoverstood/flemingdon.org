@@ -1,36 +1,30 @@
 {
-  "generated": "2026-10-19T16:36:59Z",
-  "id": "rec5Mrtaooq8aD1oj",
-  "text": "Here I go, deep type flow\nJacques Cousteau could never get this low.",
-  "type": "lyric",
-  "attribution": "Wu-Tang Clan",
-  "source": "Da Mystery of Chessboxin’",
-  "album": "Enter the Wu-Tang (36 Chambers)",
-  "year": null,
+  "generated": "2026-10-20T14:27:34Z",
+  "id": "recPmTGoVrE2ZBaLv",
+  "text": "Life moves pretty fast. If you don't stop and look around once in a while, you could miss it.",
+  "type": "dialogue",
+  "attribution": "Ferris Bueller",
+  "source": "Ferris Bueller's Day Off",
+  "album": "",
+  "year": 1986,
   "note": "",
   "expansion": {
-    "source_name": "Genius",
-    "source_url": "https://genius.com/Wu-tang-clan-da-mystery-of-chessboxin-lyrics",
+    "source_name": "TMDB",
+    "source_url": "https://www.themoviedb.org/movie/9377",
     "meta": {
-      "title": "Da Mystery of Chessboxin’",
-      "artist": "Wu-Tang Clan",
-      "album": "Enter the Wu-Tang (36 Chambers)",
-      "released": "November 9, 1993",
-      "producers": [
-        "RZA"
+      "title": "Ferris Bueller's Day Off",
+      "released": "1986",
+      "lead_label": "Directed by",
+      "leads": [
+        "John Hughes"
       ],
-      "writers": [
-        "Ghostface Killah",
-        "GZA",
-        "Inspectah Deck",
-        "Method Man"
+      "genres": [
+        "Comedy"
       ],
-      "url": "https://genius.com/Wu-tang-clan-da-mystery-of-chessboxin-lyrics"
+      "url": "https://www.themoviedb.org/movie/9377"
     },
     "body": [
-      "Jacques Cousteau was a French diver who explored the deep seas. But even he can’t get as “deep” or “low” as ODB’s twisted lyrics.",
-      "Possibly inspired by a line from Biz Markie in Marley Marl’s 1988 song “We Write the Songs” by:",
-      "Now I'ma get deep like Jacques Cousteau"
+      "After high school slacker Ferris Bueller successfully fakes an illness in order to skip school for the day, he goes on a series of adventures throughout Chicago with his girlfriend Sloane and best friend Cameron, all the while trying to outwit his wily school principal and fed-up sister."
     ]
   }
 }
