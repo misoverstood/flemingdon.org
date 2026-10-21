@@ -1,30 +1,12 @@
 {
-  "generated": "2026-10-20T14:27:34Z",
-  "id": "recPmTGoVrE2ZBaLv",
-  "text": "Life moves pretty fast. If you don't stop and look around once in a while, you could miss it.",
-  "type": "dialogue",
-  "attribution": "Ferris Bueller",
-  "source": "Ferris Bueller's Day Off",
+  "generated": "2026-10-21T14:37:45Z",
+  "id": "recYRAdLaXsV2vH5Q",
+  "text": "You can't change the people around you, but you can change the people around you.",
+  "type": "quote",
+  "attribution": "",
+  "source": "",
   "album": "",
-  "year": 1986,
+  "year": null,
   "note": "",
-  "expansion": {
-    "source_name": "TMDB",
-    "source_url": "https://www.themoviedb.org/movie/9377",
-    "meta": {
-      "title": "Ferris Bueller's Day Off",
-      "released": "1986",
-      "lead_label": "Directed by",
-      "leads": [
-        "John Hughes"
-      ],
-      "genres": [
-        "Comedy"
-      ],
-      "url": "https://www.themoviedb.org/movie/9377"
-    },
-    "body": [
-      "After high school slacker Ferris Bueller successfully fakes an illness in order to skip school for the day, he goes on a series of adventures throughout Chicago with his girlfriend Sloane and best friend Cameron, all the while trying to outwit his wily school principal and fed-up sister."
-    ]
-  }
+  "expansion": null
 }
