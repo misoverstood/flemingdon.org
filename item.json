@@ -1,35 +1,32 @@
 {
-  "generated": "2026-10-22T14:37:34Z",
-  "id": "recWspYRFbdq5OC4Q",
-  "text": "Just wakin' up in the mornin', gotta thank God.",
-  "type": "lyric",
-  "attribution": "Ice Cube",
-  "source": "It Was a Good Day",
+  "generated": "2026-10-23T14:22:56Z",
+  "id": "recrGqbytsMv3HuIo",
+  "text": "You went full r*tard man, never go full r*tard.",
+  "type": "dialogue",
+  "attribution": "Kirk Lazarus",
+  "source": "Tropic Thunder",
   "album": "",
-  "year": 1992,
+  "year": 2008,
   "note": "",
   "expansion": {
-    "source_name": "Genius",
-    "source_url": "https://genius.com/Ice-cube-it-was-a-good-day-lyrics",
+    "source_name": "TMDB",
+    "source_url": "https://www.themoviedb.org/movie/7446",
     "meta": {
-      "title": "It Was a Good Day",
-      "artist": "Ice Cube",
-      "album": "The Predator",
-      "released": "November 17, 1992",
-      "producers": [
-        "DJ Pooh"
+      "title": "Tropic Thunder",
+      "released": "2008",
+      "lead_label": "Directed by",
+      "leads": [
+        "Ben Stiller"
       ],
-      "writers": [
-        "Ice Cube",
-        "DJ Pooh",
-        "Ronald Isley",
-        "Ernie Isley"
+      "genres": [
+        "Comedy",
+        "War",
+        "Action"
       ],
-      "url": "https://genius.com/Ice-cube-it-was-a-good-day-lyrics"
+      "url": "https://www.themoviedb.org/movie/7446"
     },
     "body": [
-      "One thing that people might miss is that Ice Cube is actually religious. Therefore the gotta thank God just for waking up arguably has a dimension many miss.",
-      "‘Cause me and Allah go back like cronies I ain't gotta be fake, ‘cause he is my homie― Ice Cube – Gangsta Rap Made Me Do It"
+      "A group of self-absorbed actors set out to make the most expensive war film ever. When budgets skyrocket and schedules fall far behind, the director tries to save the production by leading his cast into the jungles of Southeast Asia, where they inadvertently encounter real danger."
     ]
   }
 }
