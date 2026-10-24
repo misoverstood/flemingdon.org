@@ -1,32 +1,37 @@
 {
-  "generated": "2026-10-23T14:22:56Z",
-  "id": "recrGqbytsMv3HuIo",
-  "text": "You went full r*tard man, never go full r*tard.",
-  "type": "dialogue",
-  "attribution": "Kirk Lazarus",
-  "source": "Tropic Thunder",
-  "album": "",
-  "year": 2008,
+  "generated": "2026-10-24T13:33:38Z",
+  "id": "rec1Oz1bpYvXAQ0j3",
+  "text": "I'm mouthwash, 'cause if I was on the floor, I'd swish (Fluoride, fluoride, swish).",
+  "type": "lyric",
+  "attribution": "Eminem",
+  "source": "The Adventures of Moon Man & Slim Shady",
+  "album": "The Adventures of Moon Man & Slim Shady",
+  "year": 2020,
   "note": "",
   "expansion": {
-    "source_name": "TMDB",
-    "source_url": "https://www.themoviedb.org/movie/7446",
+    "source_name": "Genius",
+    "source_url": "https://genius.com/Kid-cudi-and-eminem-the-adventures-of-moon-man-and-slim-shady-lyrics",
     "meta": {
-      "title": "Tropic Thunder",
-      "released": "2008",
-      "lead_label": "Directed by",
-      "leads": [
-        "Ben Stiller"
+      "title": "The Adventures of Moon Man & Slim Shady",
+      "artist": "Kid Cudi",
+      "album": null,
+      "released": "July 10, 2020",
+      "producers": [
+        "J Gramm",
+        "Dot Da Genius"
       ],
-      "genres": [
-        "Comedy",
-        "War",
-        "Action"
+      "writers": [
+        "Kid Cudi",
+        "Eminem",
+        "Dot Da Genius",
+        "J Gramm"
       ],
-      "url": "https://www.themoviedb.org/movie/7446"
+      "url": "https://genius.com/Kid-cudi-and-eminem-the-adventures-of-moon-man-and-slim-shady-lyrics"
     },
     "body": [
-      "A group of self-absorbed actors set out to make the most expensive war film ever. When budgets skyrocket and schedules fall far behind, the director tries to save the production by leading his cast into the jungles of Southeast Asia, where they inadvertently encounter real danger."
+      "Em plays with “floor, I’d” in order to produce a homophone to the word “fluoride.” This ties into his basketball prowess of scoring “swishes”—which is a flawless shot—while also doubling to the swishing movement when using mouthwash.",
+      "Em used similar lyrics in 2005’s track “Shake That,” using a different concept:",
+      "Open your mouth for about four or five minutes"
     ]
   }
 }
