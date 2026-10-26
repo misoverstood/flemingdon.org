@@ -1,31 +1,32 @@
 {
-  "generated": "2026-10-25T13:53:29Z",
-  "id": "reckRog0GuFOf4gWW",
-  "text": "Some birds aren't meant to be caged.",
+  "generated": "2026-10-26T16:17:09Z",
+  "id": "recenpqjCwVoSHnJz",
+  "text": "How did you know you could do that? I just never thought I couldn't.",
   "type": "dialogue",
-  "attribution": "Red",
-  "source": "The Shawshank Redemption",
+  "attribution": "Lightning McQueen",
+  "source": "Cars 3",
   "album": "",
-  "year": 1994,
+  "year": 2017,
   "note": "",
   "expansion": {
     "source_name": "TMDB",
-    "source_url": "https://www.themoviedb.org/movie/278",
+    "source_url": "https://www.themoviedb.org/movie/260514",
     "meta": {
-      "title": "The Shawshank Redemption",
-      "released": "1994",
+      "title": "Cars 3",
+      "released": "2017",
       "lead_label": "Directed by",
       "leads": [
-        "Frank Darabont"
+        "Brian Fee"
       ],
       "genres": [
+        "Animation",
         "Drama",
-        "Crime"
+        "Family"
       ],
-      "url": "https://www.themoviedb.org/movie/278"
+      "url": "https://www.themoviedb.org/movie/260514"
     },
     "body": [
-      "Imprisoned in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope."
+      "Blindsided by a new generation of blazing-fast racers, the legendary Lightning McQueen finds himself pushed to the brink—and suddenly, the champion who once ruled the track is fighting just to stay in the race. With his career hanging in the balance, McQueen must turn to an ambitious young race technician with a plan of her own, draw strength from the legacy of the late Fabulous Hudson Hornet, and risk everything on one last shot at glory."
     ]
   }
 }
