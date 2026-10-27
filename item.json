@@ -1,32 +1,25 @@
 {
-  "generated": "2026-10-26T16:17:09Z",
-  "id": "recenpqjCwVoSHnJz",
-  "text": "How did you know you could do that? I just never thought I couldn't.",
-  "type": "dialogue",
-  "attribution": "Lightning McQueen",
-  "source": "Cars 3",
-  "album": "",
-  "year": 2017,
+  "generated": "2026-10-27T15:30:58Z",
+  "id": "recDrkbjfMQk1FuRr",
+  "text": "And when the cops came through\nMe and Dre stood next to a burnt-down house\nWith a can full of gas and a hand full of matches\nAnd still weren't found out (Right here)",
+  "type": "lyric",
+  "attribution": "Eminem",
+  "source": "Forgot About Dre",
+  "album": "2001",
+  "year": 1999,
   "note": "",
   "expansion": {
-    "source_name": "TMDB",
-    "source_url": "https://www.themoviedb.org/movie/260514",
+    "source_name": "Genius",
+    "source_url": "https://genius.com/Q-strange-happy-home-lyrics",
     "meta": {
-      "title": "Cars 3",
-      "released": "2017",
-      "lead_label": "Directed by",
-      "leads": [
-        "Brian Fee"
-      ],
-      "genres": [
-        "Animation",
-        "Drama",
-        "Family"
-      ],
-      "url": "https://www.themoviedb.org/movie/260514"
+      "title": "Happy Home",
+      "artist": "Q Strange",
+      "album": "Strangeland",
+      "released": null,
+      "producers": [],
+      "writers": [],
+      "url": "https://genius.com/Q-strange-happy-home-lyrics"
     },
-    "body": [
-      "Blindsided by a new generation of blazing-fast racers, the legendary Lightning McQueen finds himself pushed to the brink—and suddenly, the champion who once ruled the track is fighting just to stay in the race. With his career hanging in the balance, McQueen must turn to an ambitious young race technician with a plan of her own, draw strength from the legacy of the late Fabulous Hudson Hornet, and risk everything on one last shot at glory."
-    ]
+    "body": []
   }
 }
