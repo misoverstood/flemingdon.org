@@ -1,35 +1,31 @@
 {
-  "generated": "2026-10-28T16:14:44Z",
-  "id": "recRugJ8xGBYx569b",
-  "text": "Stay gold.",
-  "type": "passage",
-  "attribution": "S.E. Hinton",
-  "source": "The Outsiders",
+  "generated": "2026-10-29T16:23:13Z",
+  "id": "rec2QKVGgASCfgY2E",
+  "text": "Celebrities always seem much smaller when you meet them in person.",
+  "type": "dialogue",
+  "attribution": "Daniel Phelan",
+  "source": "The Wire",
   "album": "",
-  "year": 1967,
-  "note": "",
+  "year": null,
+  "note": "S1.E5 — The Pager",
   "expansion": {
-    "source_name": "Open Library",
-    "source_url": "https://openlibrary.org/works/OL2718328W",
+    "source_name": "TMDB",
+    "source_url": "https://www.themoviedb.org/tv/1438",
     "meta": {
-      "title": "The Outsiders",
-      "authors": [
-        "S. E. Hinton",
-        "Jim Fyfe",
-        "Jodi Picoult"
+      "title": "The Wire",
+      "released": "2002",
+      "lead_label": "Created by",
+      "leads": [
+        "David Simon"
       ],
-      "published": "1967",
-      "subjects": [
-        "juvenile works",
-        "violence",
-        "fiction classics",
-        "Fiction"
+      "genres": [
+        "Crime",
+        "Drama"
       ],
-      "url": "https://openlibrary.org/works/OL2718328W"
+      "url": "https://www.themoviedb.org/tv/1438"
     },
     "body": [
-      "According to Ponyboy, there are two kinds of people in the world: greasers and socs. A soc (short for \"social\") has money, can get away with just about anything, and has an attitude longer than a limousine. A greaser, on the other hand, always lives on the outside and needs to watch his back.",
-      "Ponyboy is a greaser, and he's always been proud of it, even willing to rumble against a gang of socs for the sake of his fellow greasers--until one terrible night when his friend Johnny kills a soc. The murder gets under Ponyboy's skin, causing his world to crumble and teaching him that pain feels the same whether a soc or a greaser."
+      "Told from the points of view of both the Baltimore homicide and narcotics detectives and their targets, the series captures a universe in which the national war on drugs has become a permanent, self-sustaining bureaucracy, and distinctions between good and evil are routinely obliterated."
     ]
   }
 }
