@@ -1,31 +1,33 @@
 {
-  "generated": "2026-10-30T16:11:07Z",
-  "id": "recByKuH0FemVLNUx",
-  "text": "If you’d wanted to do me, I’d already be done. But there ain’t nothing you fear more than a bad headline, is there? You’d rather live in shit than let the world see you work a shovel.",
-  "type": "dialogue",
-  "attribution": "Cedric Daniels",
-  "source": "The Wire",
+  "generated": "2026-10-31T15:28:46Z",
+  "id": "recKZPrZtlXLaLr3f",
+  "text": "Hello darkness, my old friend.",
+  "type": "lyric",
+  "attribution": "Simon & Garfunkel",
+  "source": "The Sound of Silence",
   "album": "",
-  "year": null,
-  "note": "S1.E12 — Cleaning Up",
+  "year": 1964,
+  "note": "",
   "expansion": {
-    "source_name": "TMDB",
-    "source_url": "https://www.themoviedb.org/tv/1438",
+    "source_name": "Genius",
+    "source_url": "https://genius.com/Simon-and-garfunkel-the-sound-of-silence-lyrics",
     "meta": {
-      "title": "The Wire",
-      "released": "2002",
-      "lead_label": "Created by",
-      "leads": [
-        "David Simon"
+      "title": "The Sound of Silence",
+      "artist": "Simon & Garfunkel",
+      "album": "Sounds of Silence",
+      "released": "September 12, 1965",
+      "producers": [
+        "Tom Wilson"
       ],
-      "genres": [
-        "Crime",
-        "Drama"
+      "writers": [
+        "Paul Simon"
       ],
-      "url": "https://www.themoviedb.org/tv/1438"
+      "url": "https://genius.com/Simon-and-garfunkel-the-sound-of-silence-lyrics"
     },
     "body": [
-      "Told from the points of view of both the Baltimore homicide and narcotics detectives and their targets, the series captures a universe in which the national war on drugs has become a permanent, self-sustaining bureaucracy, and distinctions between good and evil are routinely obliterated."
+      "The first line highlights the key theme of the song, alienation and the inability for people to talk to one another.",
+      "He takes comfort in venting his thoughts and emotions to the darkness, because it is the only “person” willing to listen.",
+      "I used to go off in the bathroom, because the bathroom had tiles, so it was a slight echo chamber. I’d turn on the faucet so that water would run — I like that sound, it’s very soothing to me — and I’d play. In the dark."
     ]
   }
 }
