@@ -1,33 +1,32 @@
 {
-  "generated": "2026-10-31T15:28:46Z",
-  "id": "recKZPrZtlXLaLr3f",
-  "text": "Hello darkness, my old friend.",
-  "type": "lyric",
-  "attribution": "Simon & Garfunkel",
-  "source": "The Sound of Silence",
+  "generated": "2026-11-01T16:17:54Z",
+  "id": "recJ9sD5oKqhe2gUR",
+  "text": "A person is smart. People are dumb.",
+  "type": "dialogue",
+  "attribution": "K",
+  "source": "Men in Black",
   "album": "",
-  "year": 1964,
+  "year": 1997,
   "note": "",
   "expansion": {
-    "source_name": "Genius",
-    "source_url": "https://genius.com/Simon-and-garfunkel-the-sound-of-silence-lyrics",
+    "source_name": "TMDB",
+    "source_url": "https://www.themoviedb.org/movie/607",
     "meta": {
-      "title": "The Sound of Silence",
-      "artist": "Simon & Garfunkel",
-      "album": "Sounds of Silence",
-      "released": "September 12, 1965",
-      "producers": [
-        "Tom Wilson"
+      "title": "Men in Black",
+      "released": "1997",
+      "lead_label": "Directed by",
+      "leads": [
+        "Barry Sonnenfeld"
       ],
-      "writers": [
-        "Paul Simon"
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
       ],
-      "url": "https://genius.com/Simon-and-garfunkel-the-sound-of-silence-lyrics"
+      "url": "https://www.themoviedb.org/movie/607"
     },
     "body": [
-      "The first line highlights the key theme of the song, alienation and the inability for people to talk to one another.",
-      "He takes comfort in venting his thoughts and emotions to the darkness, because it is the only “person” willing to listen.",
-      "I used to go off in the bathroom, because the bathroom had tiles, so it was a slight echo chamber. I’d turn on the faucet so that water would run — I like that sound, it’s very soothing to me — and I’d play. In the dark."
+      "After a police chase with an otherworldly being, a New York City cop is recruited as an agent in a top-secret organization established to monitor and police alien activity on Earth: the Men in Black. Agent K and new recruit Agent J find themselves in the middle of a deadly plot by an intergalactic terrorist who has arrived on Earth to assassinate two ambassadors from opposing galaxies."
     ]
   }
 }
