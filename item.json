@@ -1,32 +1,31 @@
 {
-  "generated": "2026-11-01T16:17:54Z",
-  "id": "recJ9sD5oKqhe2gUR",
-  "text": "A person is smart. People are dumb.",
+  "generated": "2026-11-02T19:43:48Z",
+  "id": "recuNIEFwPn70SMnU",
+  "text": "You know what the most dangerous thing in America is, right? Nigga with a library card.",
   "type": "dialogue",
-  "attribution": "K",
-  "source": "Men in Black",
+  "attribution": "Brother Mouzone",
+  "source": "The Wire",
   "album": "",
-  "year": 1997,
-  "note": "",
+  "year": null,
+  "note": "S2.E10 — Storm Warnings",
   "expansion": {
     "source_name": "TMDB",
-    "source_url": "https://www.themoviedb.org/movie/607",
+    "source_url": "https://www.themoviedb.org/tv/1438",
     "meta": {
-      "title": "Men in Black",
-      "released": "1997",
-      "lead_label": "Directed by",
+      "title": "The Wire",
+      "released": "2002",
+      "lead_label": "Created by",
       "leads": [
-        "Barry Sonnenfeld"
+        "David Simon"
       ],
       "genres": [
-        "Action",
-        "Adventure",
-        "Comedy"
+        "Crime",
+        "Drama"
       ],
-      "url": "https://www.themoviedb.org/movie/607"
+      "url": "https://www.themoviedb.org/tv/1438"
     },
     "body": [
-      "After a police chase with an otherworldly being, a New York City cop is recruited as an agent in a top-secret organization established to monitor and police alien activity on Earth: the Men in Black. Agent K and new recruit Agent J find themselves in the middle of a deadly plot by an intergalactic terrorist who has arrived on Earth to assassinate two ambassadors from opposing galaxies."
+      "Told from the points of view of both the Baltimore homicide and narcotics detectives and their targets, the series captures a universe in which the national war on drugs has become a permanent, self-sustaining bureaucracy, and distinctions between good and evil are routinely obliterated."
     ]
   }
 }
