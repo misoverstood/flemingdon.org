@@ -1,34 +1,31 @@
 {
-  "generated": "2026-11-05T17:36:02Z",
-  "id": "recarRLuWo674e05Z",
-  "text": "But they all didn't see, the little bit of sadness in me.",
-  "type": "lyric",
-  "attribution": "Kid Cudi",
-  "source": "Soundtrack 2 My Life",
-  "album": "Man on the Moon: The End of Day",
-  "year": 2009,
-  "note": "",
+  "generated": "2026-11-06T16:54:35Z",
+  "id": "recOhiOiKl77OMZ9G",
+  "text": "“Failure to properly identify myself as a police officer.” Sounds like what I was guilty of most of my career, actually.",
+  "type": "dialogue",
+  "attribution": "Roland Pryzbylewski",
+  "source": "The Wire",
+  "album": "",
+  "year": null,
+  "note": "S3.E12 — Mission Accomplished",
   "expansion": {
-    "source_name": "Genius",
-    "source_url": "https://genius.com/Kid-cudi-soundtrack-2-my-life-lyrics",
+    "source_name": "TMDB",
+    "source_url": "https://www.themoviedb.org/tv/1438",
     "meta": {
-      "title": "Soundtrack 2 My Life",
-      "artist": "Kid Cudi",
-      "album": "Man on the Moon: The End of Day",
-      "released": "September 15, 2009",
-      "producers": [
-        "Emile Haynie"
+      "title": "The Wire",
+      "released": "2002",
+      "lead_label": "Created by",
+      "leads": [
+        "David Simon"
       ],
-      "writers": [
-        "Emile Haynie",
-        "Kid Cudi"
+      "genres": [
+        "Crime",
+        "Drama"
       ],
-      "url": "https://genius.com/Kid-cudi-soundtrack-2-my-life-lyrics"
+      "url": "https://www.themoviedb.org/tv/1438"
     },
     "body": [
-      "Though his family treated him all kindly, they weren’t aware of his sad feelings. Not because they weren’t empathic, but rather because he wouldn’t show a sign. He wouldn’t open up, he kept to himself. Cudi explained:",
-      "This album was my way of finally letting out a lot of feelings that I’ve yet to even mention to my mother.",
-      "She worries about me anyway, but I think the album is gonna open her eyes about a lot of stuff."
+      "Told from the points of view of both the Baltimore homicide and narcotics detectives and their targets, the series captures a universe in which the national war on drugs has become a permanent, self-sustaining bureaucracy, and distinctions between good and evil are routinely obliterated."
     ]
   }
 }
