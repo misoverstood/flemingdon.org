@@ -1,31 +1,23 @@
 {
-  "generated": "2026-11-06T16:54:35Z",
-  "id": "recOhiOiKl77OMZ9G",
-  "text": "“Failure to properly identify myself as a police officer.” Sounds like what I was guilty of most of my career, actually.",
-  "type": "dialogue",
-  "attribution": "Roland Pryzbylewski",
-  "source": "The Wire",
+  "generated": "2026-11-07T15:52:41Z",
+  "id": "recB9QT4fncB1kZLO",
+  "text": "This too shall pass.",
+  "type": "quote",
+  "attribution": "Persian adage",
+  "source": "",
   "album": "",
   "year": null,
-  "note": "S3.E12 — Mission Accomplished",
+  "note": "",
   "expansion": {
-    "source_name": "TMDB",
-    "source_url": "https://www.themoviedb.org/tv/1438",
+    "source_name": "Wikipedia",
+    "source_url": "https://en.wikipedia.org/wiki/This_too_shall_pass",
     "meta": {
-      "title": "The Wire",
-      "released": "2002",
-      "lead_label": "Created by",
-      "leads": [
-        "David Simon"
-      ],
-      "genres": [
-        "Crime",
-        "Drama"
-      ],
-      "url": "https://www.themoviedb.org/tv/1438"
+      "title": "This too shall pass",
+      "subtitle": "Adage about the human condition",
+      "url": "https://en.wikipedia.org/wiki/This_too_shall_pass"
     },
     "body": [
-      "Told from the points of view of both the Baltimore homicide and narcotics detectives and their targets, the series captures a universe in which the national war on drugs has become a permanent, self-sustaining bureaucracy, and distinctions between good and evil are routinely obliterated."
+      "\"This too shall pass\" is an adage of likely Persian origin about impermanence. It reflects the temporary nature, or ephemerality, of the human condition — that neither negative nor positive moments in life last indefinitely. The general sentiment of the adage appears in wisdom literature throughout history and across cultures, but the specific phrase seems to have originated in the writings of medieval Persian Sufi poets."
     ]
   }
 }
