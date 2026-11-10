@@ -1,36 +1,31 @@
 {
-  "generated": "2026-11-09T19:59:34Z",
-  "id": "reczZAArSa9PPu4Ja",
-  "text": "We ain't nothin' but mammals\nWell, some of us cannibals who cut other people open like cantaloupes.",
-  "type": "lyric",
-  "attribution": "Eminem",
-  "source": "The Real Slim Shady",
-  "album": "The Marshall Mathers LP",
-  "year": 2000,
-  "note": "",
+  "generated": "2026-11-10T17:15:08Z",
+  "id": "recwN8mhfQ0la8vZb",
+  "text": "Is you taking notes on a criminal fucking conspiracy?",
+  "type": "dialogue",
+  "attribution": "Stringer Bell",
+  "source": "The Wire",
+  "album": "",
+  "year": null,
+  "note": "S3.E5 — Straight and True",
   "expansion": {
-    "source_name": "Genius",
-    "source_url": "https://genius.com/Eminem-the-real-slim-shady-lyrics",
+    "source_name": "TMDB",
+    "source_url": "https://www.themoviedb.org/tv/1438",
     "meta": {
-      "title": "The Real Slim Shady",
-      "artist": "Eminem",
-      "album": "Confused? You Should Be (Album Sampler)",
-      "released": "April 18, 2000",
-      "producers": [
-        "Dr. Dre",
-        "Mel-Man"
+      "title": "The Wire",
+      "released": "2002",
+      "lead_label": "Created by",
+      "leads": [
+        "David Simon"
       ],
-      "writers": [
-        "Eminem",
-        "Dr. Dre",
-        "Mel-Man",
-        "Tommy Coster"
+      "genres": [
+        "Crime",
+        "Drama"
       ],
-      "url": "https://genius.com/Eminem-the-real-slim-shady-lyrics"
+      "url": "https://www.themoviedb.org/tv/1438"
     },
     "body": [
-      "Despite the universal “we’re all mammals” sentiment, Slim Shady doesn’t want you to forget he’s the kind of psychopath who looks at human flesh the way you might look at the makings of a nice fruit salad.",
-      "The long “A” sounds in “mammals”, along with repeated first syllables in “cantaloupe” and “cannibal” reinforce the rhythm of these bars. Since the realease of “The Real Slim Shady,” the unlikely pairing of “cantaloupe” and “cannibal” has been borrowed by a number of artists, including Earl Sweatshirt, JUNGLEPUSSY, Wakizashi, Mack Maine and Lord Infamous."
+      "Told from the points of view of both the Baltimore homicide and narcotics detectives and their targets, the series captures a universe in which the national war on drugs has become a permanent, self-sustaining bureaucracy, and distinctions between good and evil are routinely obliterated."
     ]
   }
 }
