@@ -1,31 +1,12 @@
 {
-  "generated": "2026-11-10T17:15:08Z",
-  "id": "recwN8mhfQ0la8vZb",
-  "text": "Is you taking notes on a criminal fucking conspiracy?",
-  "type": "dialogue",
-  "attribution": "Stringer Bell",
-  "source": "The Wire",
+  "generated": "2026-11-11T17:24:23Z",
+  "id": "recZDo2gwPZLE2FMB",
+  "text": "Lights, camera, acting.",
+  "type": "quote",
+  "attribution": "",
+  "source": "",
   "album": "",
   "year": null,
-  "note": "S3.E5 — Straight and True",
-  "expansion": {
-    "source_name": "TMDB",
-    "source_url": "https://www.themoviedb.org/tv/1438",
-    "meta": {
-      "title": "The Wire",
-      "released": "2002",
-      "lead_label": "Created by",
-      "leads": [
-        "David Simon"
-      ],
-      "genres": [
-        "Crime",
-        "Drama"
-      ],
-      "url": "https://www.themoviedb.org/tv/1438"
-    },
-    "body": [
-      "Told from the points of view of both the Baltimore homicide and narcotics detectives and their targets, the series captures a universe in which the national war on drugs has become a permanent, self-sustaining bureaucracy, and distinctions between good and evil are routinely obliterated."
-    ]
-  }
+  "note": "",
+  "expansion": null
 }
