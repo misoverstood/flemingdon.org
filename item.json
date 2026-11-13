@@ -1,12 +1,31 @@
 {
-  "generated": "2026-11-12T17:43:06Z",
-  "id": "reclK9RB2cJ6aMffG",
-  "text": "I'm not your friend right now. I'm raising and teaching you so that one day, I can be your friend.",
-  "type": "quote",
-  "attribution": "Deante' Kyle",
-  "source": "",
+  "generated": "2026-11-13T17:21:04Z",
+  "id": "recoBTBeS8aKw4sn5",
+  "text": "The fish don't care when it rains.",
+  "type": "dialogue",
+  "attribution": "Jennifer Msumba",
+  "source": "The Fish Don't Care When It Rains",
   "album": "",
   "year": null,
   "note": "",
-  "expansion": null
+  "expansion": {
+    "source_name": "TMDB",
+    "source_url": "https://www.themoviedb.org/movie/1748069",
+    "meta": {
+      "title": "The Fish Don't Care When It Rains",
+      "released": "2026",
+      "lead_label": "Directed by",
+      "leads": [
+        "Siobhan McDonnell",
+        "Jen Msumba"
+      ],
+      "genres": [
+        "Documentary"
+      ],
+      "url": "https://www.themoviedb.org/movie/1748069"
+    },
+    "body": [
+      "How far would you go to change a child the world can’t understand? One autistic artist survives a hidden system of abuse built to correct her."
+    ]
+  }
 }
