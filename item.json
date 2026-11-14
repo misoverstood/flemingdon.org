@@ -1,31 +1,31 @@
 {
-  "generated": "2026-11-13T17:21:04Z",
-  "id": "recoBTBeS8aKw4sn5",
-  "text": "The fish don't care when it rains.",
+  "generated": "2026-11-14T16:03:23Z",
+  "id": "rec11AADMCe02jRjy",
+  "text": "Get busy living, or get busy dying.",
   "type": "dialogue",
-  "attribution": "Jennifer Msumba",
-  "source": "The Fish Don't Care When It Rains",
+  "attribution": "Red",
+  "source": "The Shawshank Redemption",
   "album": "",
-  "year": null,
+  "year": 1994,
   "note": "",
   "expansion": {
     "source_name": "TMDB",
-    "source_url": "https://www.themoviedb.org/movie/1748069",
+    "source_url": "https://www.themoviedb.org/movie/278",
     "meta": {
-      "title": "The Fish Don't Care When It Rains",
-      "released": "2026",
+      "title": "The Shawshank Redemption",
+      "released": "1994",
       "lead_label": "Directed by",
       "leads": [
-        "Siobhan McDonnell",
-        "Jen Msumba"
+        "Frank Darabont"
       ],
       "genres": [
-        "Documentary"
+        "Drama",
+        "Crime"
       ],
-      "url": "https://www.themoviedb.org/movie/1748069"
+      "url": "https://www.themoviedb.org/movie/278"
     },
     "body": [
-      "How far would you go to change a child the world can’t understand? One autistic artist survives a hidden system of abuse built to correct her."
+      "Imprisoned in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope."
     ]
   }
 }
