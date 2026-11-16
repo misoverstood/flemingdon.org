@@ -1,39 +1,31 @@
 {
-  "generated": "2026-11-15T16:32:52Z",
-  "id": "recLMFVfaGnpmne6y",
-  "text": "Psycho, I'm liable to go Michael, take your pick\nJackson, Tyson, Jordan, Game 6,",
-  "type": "lyric",
-  "attribution": "Jay-Z",
-  "source": "Niggas in Paris",
-  "album": "Watch the Throne",
-  "year": 2011,
-  "note": "",
+  "generated": "2026-11-16T19:48:24Z",
+  "id": "rech1ksnkdygQ81w1",
+  "text": "It ain’t what you takin’, it’s who you takin’ from, ya feel me? How you expect to run with the wolves come night when you spend all day sparring with the puppies?",
+  "type": "dialogue",
+  "attribution": "Omar Little",
+  "source": "The Wire",
+  "album": "",
+  "year": null,
+  "note": "S4.E3 — Home Rooms",
   "expansion": {
-    "source_name": "Genius",
-    "source_url": "https://genius.com/Jay-z-and-kanye-west-niggas-in-paris-lyrics",
+    "source_name": "TMDB",
+    "source_url": "https://www.themoviedb.org/tv/1438",
     "meta": {
-      "title": "Niggas in Paris",
-      "artist": "JAŸ-Z",
-      "album": "Watch the Throne",
-      "released": "September 13, 2011",
-      "producers": [
-        "Kanye West",
-        "Hit-Boy",
-        "MIKE DEAN",
-        "Anthony Kilhoffer"
+      "title": "The Wire",
+      "released": "2002",
+      "lead_label": "Created by",
+      "leads": [
+        "David Simon"
       ],
-      "writers": [
-        "JAŸ-Z",
-        "Kanye West",
-        "Hit-Boy",
-        "MIKE DEAN"
+      "genres": [
+        "Crime",
+        "Drama"
       ],
-      "url": "https://genius.com/Jay-z-and-kanye-west-niggas-in-paris-lyrics"
+      "url": "https://www.themoviedb.org/tv/1438"
     },
     "body": [
-      "There is a history of genius-level performances by individuals named Michael: Michael Jackson, a.k.a. the “King of Pop”; Mike Tyson, the former Heavyweight Boxing Champion of the World; and Michael Jordan, widely considered to be the greatest basketball player of all time.",
-      "This image is taken from the music video for Michael Jackson’s single, “Jam,” found on his November 1991 album, Dangerous.",
-      "Five of Jordan’s six NBA championships ended in the sixth of a seven game series. For example, his 1998 winning-shot in Game 6 against the Utah Jazz proved to be legendary. It’s worth noting that Jordan never played a Game 7 in the NBA Finals."
+      "Told from the points of view of both the Baltimore homicide and narcotics detectives and their targets, the series captures a universe in which the national war on drugs has become a permanent, self-sustaining bureaucracy, and distinctions between good and evil are routinely obliterated."
     ]
   }
 }
