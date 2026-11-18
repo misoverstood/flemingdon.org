@@ -1,31 +1,12 @@
 {
-  "generated": "2026-11-17T18:43:58Z",
-  "id": "recUndA22XuLYgKWS",
-  "text": "Lesson here, ‘Bey: You come at the king, you best not miss.",
-  "type": "dialogue",
-  "attribution": "Omar Little",
-  "source": "The Wire",
+  "generated": "2026-11-18T18:20:51Z",
+  "id": "recMK8WIZL96QACLJ",
+  "text": "You cannot heal in the same environment that made you sick.",
+  "type": "quote",
+  "attribution": "",
+  "source": "",
   "album": "",
   "year": null,
-  "note": "S1.E8 — Lessons",
-  "expansion": {
-    "source_name": "TMDB",
-    "source_url": "https://www.themoviedb.org/tv/1438",
-    "meta": {
-      "title": "The Wire",
-      "released": "2002",
-      "lead_label": "Created by",
-      "leads": [
-        "David Simon"
-      ],
-      "genres": [
-        "Crime",
-        "Drama"
-      ],
-      "url": "https://www.themoviedb.org/tv/1438"
-    },
-    "body": [
-      "Told from the points of view of both the Baltimore homicide and narcotics detectives and their targets, the series captures a universe in which the national war on drugs has become a permanent, self-sustaining bureaucracy, and distinctions between good and evil are routinely obliterated."
-    ]
-  }
+  "note": "",
+  "expansion": null
 }
