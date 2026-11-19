@@ -1,12 +1,31 @@
 {
-  "generated": "2026-11-18T18:20:51Z",
-  "id": "recMK8WIZL96QACLJ",
-  "text": "You cannot heal in the same environment that made you sick.",
-  "type": "quote",
-  "attribution": "",
-  "source": "",
+  "generated": "2026-11-19T18:36:40Z",
+  "id": "recwWyTFa9DBWGxvj",
+  "text": "I never had any friends later on like the ones I had when I was twelve. Jesus, does anyone?",
+  "type": "dialogue",
+  "attribution": "Gordie Lachance",
+  "source": "Stand By Me",
   "album": "",
-  "year": null,
+  "year": 1986,
   "note": "",
-  "expansion": null
+  "expansion": {
+    "source_name": "TMDB",
+    "source_url": "https://www.themoviedb.org/movie/235",
+    "meta": {
+      "title": "Stand by Me",
+      "released": "1986",
+      "lead_label": "Directed by",
+      "leads": [
+        "Rob Reiner"
+      ],
+      "genres": [
+        "Drama",
+        "Adventure"
+      ],
+      "url": "https://www.themoviedb.org/movie/235"
+    },
+    "body": [
+      "After learning that a boy their age has been accidentally killed near their rural homes, four boys decide to go see the body. Gordie, Vern, Chris, and Teddy encounter a mean junk man and a marsh full of leeches, but they also learn more about one another and their very different home lives. Just a lark at first, the boys' adventure evolves into a defining event in their lives."
+    ]
+  }
 }
