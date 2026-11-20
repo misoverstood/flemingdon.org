@@ -1,31 +1,31 @@
 {
-  "generated": "2026-11-19T18:36:40Z",
-  "id": "recwWyTFa9DBWGxvj",
-  "text": "I never had any friends later on like the ones I had when I was twelve. Jesus, does anyone?",
+  "generated": "2026-11-20T17:57:59Z",
+  "id": "reclLzCeBKPR62Zhe",
+  "text": "Yeah, I ain't no suit-wearin' businessman like you. You know, I'm just a gangsta, I suppose. And I want my corners.",
   "type": "dialogue",
-  "attribution": "Gordie Lachance",
-  "source": "Stand By Me",
+  "attribution": "Avon Barksdale",
+  "source": "The Wire",
   "album": "",
-  "year": 1986,
-  "note": "",
+  "year": null,
+  "note": "S3.E6 — Homecoming",
   "expansion": {
     "source_name": "TMDB",
-    "source_url": "https://www.themoviedb.org/movie/235",
+    "source_url": "https://www.themoviedb.org/tv/1438",
     "meta": {
-      "title": "Stand by Me",
-      "released": "1986",
-      "lead_label": "Directed by",
+      "title": "The Wire",
+      "released": "2002",
+      "lead_label": "Created by",
       "leads": [
-        "Rob Reiner"
+        "David Simon"
       ],
       "genres": [
-        "Drama",
-        "Adventure"
+        "Crime",
+        "Drama"
       ],
-      "url": "https://www.themoviedb.org/movie/235"
+      "url": "https://www.themoviedb.org/tv/1438"
     },
     "body": [
-      "After learning that a boy their age has been accidentally killed near their rural homes, four boys decide to go see the body. Gordie, Vern, Chris, and Teddy encounter a mean junk man and a marsh full of leeches, but they also learn more about one another and their very different home lives. Just a lark at first, the boys' adventure evolves into a defining event in their lives."
+      "Told from the points of view of both the Baltimore homicide and narcotics detectives and their targets, the series captures a universe in which the national war on drugs has become a permanent, self-sustaining bureaucracy, and distinctions between good and evil are routinely obliterated."
     ]
   }
 }
