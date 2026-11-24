@@ -1,12 +1,31 @@
 {
-  "generated": "2026-11-23T21:38:17Z",
-  "id": "rec5bJFaR6lxKSscR",
-  "text": "No complaints.",
-  "type": "quote",
-  "attribution": "",
-  "source": "",
+  "generated": "2026-11-24T20:18:49Z",
+  "id": "reckWib6BmkXp5E0l",
+  "text": "You know what I was thinking? That tonight’s a good night. Why? Because my shot cop didn’t die. Then it hit me. This is what makes a good night on my watch. Absence of a negative.",
+  "type": "dialogue",
+  "attribution": "Bunny Colvin",
+  "source": "The Wire",
   "album": "",
   "year": null,
-  "note": "",
-  "expansion": null
+  "note": "S3.E2 — All Due Respect",
+  "expansion": {
+    "source_name": "TMDB",
+    "source_url": "https://www.themoviedb.org/tv/1438",
+    "meta": {
+      "title": "The Wire",
+      "released": "2002",
+      "lead_label": "Created by",
+      "leads": [
+        "David Simon"
+      ],
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "url": "https://www.themoviedb.org/tv/1438"
+    },
+    "body": [
+      "Told from the points of view of both the Baltimore homicide and narcotics detectives and their targets, the series captures a universe in which the national war on drugs has become a permanent, self-sustaining bureaucracy, and distinctions between good and evil are routinely obliterated."
+    ]
+  }
 }
